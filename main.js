@@ -23,7 +23,7 @@ let data = [
     {
         "id": "2",
         "pregunta" : "xxxxxxx" ,
-        "respuestasCorrectas": ["1","2"],
+        "respuestasCorrectas": ["3"],
         "tipo": "simple",
         "respuestas": [
             {
@@ -63,10 +63,13 @@ let data = [
 
 ];
 
+let respuestas = [];
+
 let contador = 0;
 
 function getQuestion(contador)
 {
+    respuestas = [];
     let question = data.filter(function(value)
     {
         return value.id ==  contador.toString();
@@ -79,7 +82,7 @@ function getQuestion(contador)
 }
 function getNext()
 {
-
+    respuestas = [];
     if(contador == data.length)
     {
         alert('Estas es la ultima pregunta');
@@ -93,6 +96,7 @@ function getNext()
 
 function getBack()
 {
+    respuestas = [];
     if(contador == 1)
     {
         alert('Estas es la primera pregunta');
@@ -102,9 +106,55 @@ function getBack()
     getQuestion(contador);
 }
 
-function michael()
+function comprobar()
 {
-    alert("michael");
+    console.log
+    let question = data.filter(function(value)
+    {
+        return value.id ==  contador.toString();
+    });
+
+    question = question[0];
+
+    validateQuestion(question.respuestasCorrectas);
+}
+
+function validateQuestion(respuestasCorrectas)
+{
+
+    if (sameMembers(respuestas,respuestasCorrectas) == true)
+    {
+        alert('Correcto');
+    }
+    else
+    {
+        alert('Incorrecto');
+    }
+
+}
+
+function sameMembers(arr1, arr2) 
+{
+    const set1 = new Set(arr1);
+    const set2 = new Set(arr2);
+    return arr1.every(item => set2.has(item)) &&
+        arr2.every(item => set1.has(item))
+}
+
+function setvalue(event)
+{
+    var checkbox = document.getElementById(event.toString());
+ 
+    if (checkbox.checked != true)
+    {
+            respuestas = respuestas.filter(function(item) {
+            return item !== event.toString();
+        })
+    }
+    else
+    {
+        respuestas.push(event.toString());
+    }
 }
 
 function makeQuestion(question)
@@ -119,14 +169,14 @@ function makeQuestion(question)
         question.respuestas.forEach(function(value)
         {
             bloque+= '<li class="list-group-item">';
-            bloque+= '<input class="form-check-input me-1" type="checkbox" value="'+value.id+'" aria-label="...">';
+            bloque+= '<input class="form-check-input me-1" type="checkbox" onclick="setvalue('+value.id+')" value="'+value.id+'"  id="'+value.id+'"  aria-label="...">';
             bloque+= value.titulo;
             bloque+='</li>';
         });
 
         bloque+='<div>';
         bloque+='<button onclick="getBack()">Anterior</button>';
-        bloque+='<button onclick="michael()">Comprobar</button>';
+        bloque+='<button onclick="comprobar()">Comprobar</button>';
         bloque+='<button onclick="getNext()">Siguiente</button>';
         bloque+='</div>';
         

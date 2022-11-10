@@ -4,7 +4,7 @@ let data = [
         "id": "1",
         "pregunta" : "sassa" ,
         "respuestasCorrectas": ["1","2"],
-        "tipo": "simple",
+        "tipo": "Multiple",
         "respuestas": [
             {
                 "id" : "1",
@@ -24,7 +24,7 @@ let data = [
         "id": "2",
         "pregunta" : "xxxxxxx" ,
         "respuestasCorrectas": ["3"],
-        "tipo": "simple",
+        "tipo": "Simple",
         "respuestas": [
             {
                 "id" : "1",
@@ -44,7 +44,7 @@ let data = [
         "id": "3",
         "pregunta" : "Que lenguaje es una mierda" ,
         "respuestasCorrectas": ["1","2"],
-        "tipo": "simple",
+        "tipo": "Multiple",
         "respuestas": [
             {
                 "id" : "1",
@@ -162,9 +162,9 @@ function makeQuestion(question)
     console.log(question.id,question.pregunta,question.respuestas);
 
     let bloque = '<div>';
-        bloque+= '<h3>' + question.pregunta +'</h3><input type="hidden" id="preguntaId" value="'+question.id+'"/>';
+        bloque+= '<h3>' + question.pregunta +'</h3><span>('+question.tipo+')</span><input type="hidden" id="preguntaId" value="'+question.id+'"/>';
         bloque+= '<br><br>';
-        bloque+= '<ul class="list-group">';
+        bloque+= '<ul class="list-group mb-4">';
         
         question.respuestas.forEach(function(value)
         {
@@ -173,14 +173,13 @@ function makeQuestion(question)
             bloque+= value.titulo;
             bloque+='</li>';
         });
-
-        bloque+='<div>';
-        bloque+='<button onclick="getBack()">Anterior</button>';
-        bloque+='<button onclick="comprobar()">Comprobar</button>';
-        bloque+='<button onclick="getNext()">Siguiente</button>';
+        bloque+= '</ul>';
+        bloque+='<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">';
+        bloque+='<button  class="btn btn-warning btn-lg px-4 gap-3" onclick="getBack()">Anterior</button>';
+        bloque+='<button  class="btn btn-success btn-lg px-4 gap-3" onclick="comprobar()">Comprobar</button>';
+        bloque+='<button  class="btn btn-primary btn-lg px-4 gap-3" onclick="getNext()">Siguiente</button>';
         bloque+='</div>';
-        
-    bloque += '</div>'
+        bloque += '</div>'
 
     $('#questionSection').empty().append(bloque);
 

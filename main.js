@@ -1,71 +1,36 @@
 
 let data = [
     {
-        "id": "1",
-        "pregunta" : "sassa" ,
-        "respuestasCorrectas": ["1","2"],
-        "tipo": "Multiple",
+        "id": "",
+        "pregunta" : "" ,
+        "respuestasCorrectas": [""],
+        "tipo": "Multiple/Simple",
         "respuestas": [
             {
                 "id" : "1",
-                "titulo" : "sdsdsdsdsdsds",
+                "titulo" : "",
             },
             {
                 "id" : "2",
-                "titulo" : "sdsdsdsdsdsds",
+                "titulo" : "",
             },
             {
                 "id" : "3",
-                "titulo" : "sdsdsdsdsdsds"
-            }
-        ]
-    },
-    {
-        "id": "2",
-        "pregunta" : "xxxxxxx" ,
-        "respuestasCorrectas": ["3"],
-        "tipo": "Simple",
-        "respuestas": [
-            {
-                "id" : "1",
-                "titulo" : "aaaaa",
+                "titulo" : ""
             },
             {
-                "id" : "2",
-                "titulo" : "aaaaa",
-            },
-            {
-                "id" : "3",
-                "titulo" : "aaaaa"
-            }
-        ]
-    },
-    {
-        "id": "3",
-        "pregunta" : "Que lenguaje es una mierda" ,
-        "respuestasCorrectas": ["1","2"],
-        "tipo": "Multiple",
-        "respuestas": [
-            {
-                "id" : "1",
-                "titulo" : "apex",
-            },
-            {
-                "id" : "2",
-                "titulo" : "js",
-            },
-            {
-                "id" : "3",
-                "titulo" : "c++"
+                "id" : "4",
+                "titulo" : ""
             }
         ]
     }
-
 ];
+
+
 
 let respuestas = [];
 
-let contador = 0;
+let contador = 0 ;
 
 function getQuestion(contador)
 {
@@ -83,12 +48,15 @@ function getQuestion(contador)
 function getNext()
 {
     respuestas = [];
+    console.log(contador);
     if(contador == data.length)
     {
         alert('Estas es la ultima pregunta');
         return;
     }
     contador++;
+
+  
 
     getQuestion(contador);
 

@@ -25,7 +25,10 @@ function getNext(set)
     if(set == 1){
         data = set1;
     }
-    else if( set ==3 ){
+    else if( set ==2 ){
+        data = set2;
+    }
+    else if( set =3 ){
         data = set3;
     }
 

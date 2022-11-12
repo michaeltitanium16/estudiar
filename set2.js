@@ -1,5 +1,255 @@
 let set2 = [
     {
+        "id": "40",
+        "pregunta" : "A Lightning component has a wired property, searchResults, that stores a list of Opportunities. <br> <br> Which definition of the Apex method, to which the searchResults property is wired, should be used?" ,
+        "respuestasCorrectas": ["1"],
+        "tipo": "Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "@AuraEnabled(cacheable=true)<br>public static List<Opportunity> search(String term) {/*implementation*/}",
+            },
+            {
+                "id" : "2",
+                "titulo" : "@AuraEnabled(cacheable=true)<br>public List<Opportunity> search(String term) {/*implementation*/}",
+            },
+            {
+                "id" : "3",
+                "titulo" : "@AuraEnabled(cacheable=false)<br>public List<Opportunity> search(String term) {/*implementation*/}"
+            },
+            {
+                "id" : "4",
+                "titulo" : "@AuraEnabled(cacheable=false)<br>public static List<Opportunity> search(String term) {/*implementation*/}"
+            }
+        ]
+    },
+    {
+        "id": "41",
+        "pregunta" : "Which two events need to happen when deploying to a production org?" ,
+        "respuestasCorrectas": ["1","2"],
+        "tipo": "Multiple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "All triggers must have some test coverage.",
+            },
+            {
+                "id" : "2",
+                "titulo" : "All Apex code must have at least 75% test coverage.",
+            },
+            {
+                "id" : "3",
+                "titulo" : "All Visual flows must have at least 1% test coverage."
+            },
+            {
+                "id" : "4",
+                "titulo" : "All Workflow rules must have at least 1% test coverage."
+            }
+        ]
+    },
+    {
+        "id": "42",
+        "pregunta" : "How can a developer check the test coverage of autolaunched Flows before deploying them in a change set?" ,
+        "respuestasCorrectas": ["4"],
+        "tipo": "Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "Use the Code Coverage Setup page.",
+            },
+            {
+                "id" : "2",
+                "titulo" : "Use the ApexTestResult class.",
+            },
+            {
+                "id" : "3",
+                "titulo" : "Use the Flow Properties page."
+            },
+            {
+                "id" : "4",
+                "titulo" : "use SOQL the Tooling API."
+            }
+        ]
+    },
+    {
+        "id": "43",
+        "pregunta" : "What are three considerations when using the @InvocableMethod annotation in Apex?" ,
+        "respuestasCorrectas": ["3","4","5"],
+        "tipo": "Multiple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "A method using the @InvocableMethod annotation can have multiple input parameters.",
+            },
+            {
+                "id" : "2",
+                "titulo" : "A method using the @InvocableMethod annotation must define a return value.",
+            },
+            {
+                "id" : "3",
+                "titulo" : "Only one method using the @InvocableMethod annotation can be defined per Apex class."
+            },
+            {
+                "id" : "4",
+                "titulo" : "A method using the @InvocableMethod annotation can be declared as Public or Global."
+            }
+            ,
+            {
+                "id" : "5",
+                "titulo" : "A method using the @InvocableMethod annotation must be declared as static."
+            }
+        ]
+    },
+    {
+        "id": "44",
+        "pregunta" : "A developer created a custom order management app that uses an Apex class. The order is represented by an Order object and an OrderItem object that has a master-detail relationship to Order. During order processing, an order may be split into multiple orders. <br> <br> What should a developer do to allow their code to move some existing OrderItem records to a new Order record?" ,
+        "respuestasCorrectas": ["3"],
+        "tipo": "Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "Add without sharing to the Apex class declaration.",
+            },
+            {
+                "id" : "2",
+                "titulo" : "Select the Allow reparenting option on the master-detail relationship.",
+            },
+            {
+                "id" : "3",
+                "titulo" : "Create a junction object between OrderItem and Order."
+            },
+            {
+                "id" : "4",
+                "titulo" : "Change the master-detail relationship to an external lookup relationship."
+            }
+        ]
+    },
+    {
+        "id": "45",
+        "pregunta" : "A developer migrated functionality from JavaScript Remoting to a Lightning web component and wants to use the existing getOpportunities() method to provide data. <br> <br> Which modification to the method is necessary?" ,
+        "respuestasCorrectas": ["1"],
+        "tipo": "Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "The method must be decorated with (cacheable=true).",
+            },
+            {
+                "id" : "2",
+                "titulo" : "The method must be decorated with @AuraEnabled.",
+            },
+            {
+                "id" : "3",
+                "titulo" : "The method must return a String of a serialized JSON Array."
+            },
+            {
+                "id" : "4",
+                "titulo" : "The method must return a JSON Object."
+            }
+        ]
+    },
+    {
+        "id": "46",
+        "pregunta" : "A developer created a Lightning web component called statusComponent to be inserted into the Account record page. <br> <br> Which two things should the developer do to make this component available?" ,
+        "respuestasCorrectas": ["1","2"],
+        "tipo": "Multiple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "Add <xmp><isExposed>true</isExposed> to the statusComponent.js-meta.xml file.</xmp>",
+            },
+            {
+                "id" : "2",
+                "titulo" : "Add <xmp><target>lightning_RecordPage</target></xmp> to the statusComponent.js-meta.xml file.",
+            },
+            {
+                "id" : "3",
+                "titulo" : "Add <xmp><masterLabel>Account</masterLabel></xmp> to the statusComponent.js-meta.xml file."
+            },
+            {
+                "id" : "4",
+                "titulo" : "Add <xmp><target>lightning_RecordaPage</target></xmp> to the statusComponent.js file."
+            }
+        ]
+    },
+    {
+        "id": "47",
+        "pregunta" : "A developer writes a trigger on the Account object on the before update event that increments a count field. A workflow rule alsdo increments the count field every time that an Account is created or updated. The field update in the workflow rule is configured to not re-evaluate workflow rule. <br> <br> What is the value of the count field if an Account is inserted with an initial value of zero, assuming no other automation logic is implemented on the Account?" ,
+        "respuestasCorrectas": ["3"],
+        "tipo": "Multiple/Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "4",
+            },
+            {
+                "id" : "2",
+                "titulo" : "2",
+            },
+            {
+                "id" : "3",
+                "titulo" : "3"
+            },
+            {
+                "id" : "4",
+                "titulo" : "1"
+            }
+        ]
+    },
+    {
+        "id": "48",
+        "pregunta" : "What are three capabilities of the <ltng:require> tag when loading JavaScript resources ir Aura components?" ,
+        "respuestasCorrectas": ["1","2","4"],
+        "tipo": "Multiple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "Specifying loading order",
+            },
+            {
+                "id" : "2",
+                "titulo" : "One-time loading for duplicate scripts",
+            },
+            {
+                "id" : "3",
+                "titulo" : "Loading files from Documents"
+            },
+            {
+                "id" : "4",
+                "titulo" : "Loading scripts in parallel"
+            }
+            ,
+            {
+                "id" : "4",
+                "titulo" : "Loading externally hosted scripts"
+            }
+        ]
+    },
+    {
+        "id": "49",
+        "pregunta" : "An org tracks customer orders on an Order object and the line items of an Order on the Line Item object. The Line Item object has a master-detail relationship to the Order object. <br> <br> A developer has a requirement to calculate the order amount on an Order and the line amount on each Line Item based on quantity and price. <br> <br> What is the correct implementation?" ,
+        "respuestasCorrectas": ["3"],
+        "tipo": "Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "Write a process on the Line Item that calculates the item amount and order amount and updates the fields on the Line Item and The Order.",
+            },
+            {
+                "id" : "2",
+                "titulo" : "Write a single before trigger on the Line that calculates the item amount and updates the order amount on the Order.",
+            },
+            {
+                "id" : "3",
+                "titulo" : "Implement the line amount as a numeric formula field and the order amount as a roll-up summary field."
+            },
+            {
+                "id" : "4",
+                "titulo" : "Implement the line amount as a currency field and the order amount as a SUM formula field."
+            }
+        ]
+    },
+    {
         "id": "50",
         "pregunta" : "While working in a sandbox, an Apex test fails when run in the Test Framework. However, running the Apex test logic in the Execute Anonymous window succeeds with no exceptions or errors. <br> <br>Why did the method fall in the sandbox test framework but succeed in the Developer Console?  </br>" ,
         "respuestasCorrectas": ["2"],

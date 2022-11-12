@@ -1,28 +1,4 @@
-let data = [
-    {
-        "id": "",
-        "pregunta" : "" ,
-        "respuestasCorrectas": ["2"],
-        "tipo": "Multiple/Simple",
-        "respuestas": [
-            {
-                "id" : "1",
-                "titulo" : "",
-            },
-            {
-                "id" : "2",
-                "titulo" : "",
-            },
-            {
-                "id" : "3",
-                "titulo" : ""
-            },
-            {
-                "id" : "4",
-                "titulo" : ""
-            }
-        ]
-    },
+let set1 = [
     {
         "id": "1",
         "pregunta" : "The Account object in an organization has a master-detail relationship to a child object called Branch. The following automations exist: <br> • Roll-up summary fields <br>• Custom validation rules <br>• Duplicate rules   <br> <br>A developer created a trigger on the Account object. <br> <br> Which two things should the developer consider while testing the trigger code? " ,
@@ -287,54 +263,6 @@ let data = [
                 "id" : "4",
                 "titulo" : "<xmp> <aura: component access='\"GLOBAL'\"> </xmp><xmp>  <aura:dependency resource='\"c:accountList'\"/> </xmp> <xmp> </aura:component> </xmp>",
             }        
-        ]
-    },
-    {
-        "id": "",
-        "pregunta" : "" ,
-        "respuestasCorrectas": ["2"],
-        "tipo": "Multiple/Simple",
-        "respuestas": [
-            {
-                "id" : "1",
-                "titulo" : "",
-            },
-            {
-                "id" : "2",
-                "titulo" : "",
-            },
-            {
-                "id" : "3",
-                "titulo" : ""
-            },
-            {
-                "id" : "4",
-                "titulo" : ""
-            }
-        ]
-    },
-    {
-        "id": "",
-        "pregunta" : "" ,
-        "respuestasCorrectas": ["2"],
-        "tipo": "Multiple/Simple",
-        "respuestas": [
-            {
-                "id" : "1",
-                "titulo" : "",
-            },
-            {
-                "id" : "2",
-                "titulo" : "",
-            },
-            {
-                "id" : "3",
-                "titulo" : ""
-            },
-            {
-                "id" : "4",
-                "titulo" : ""
-            }
         ]
     },
     {

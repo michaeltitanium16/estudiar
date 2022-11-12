@@ -1,30 +1,5 @@
 
-let data = [
-    {
-        "id": "",
-        "pregunta" : "" ,
-        "respuestasCorrectas": [""],
-        "tipo": "Multiple/Simple",
-        "respuestas": [
-            {
-                "id" : "1",
-                "titulo" : "",
-            },
-            {
-                "id" : "2",
-                "titulo" : "",
-            },
-            {
-                "id" : "3",
-                "titulo" : ""
-            },
-            {
-                "id" : "4",
-                "titulo" : ""
-            }
-        ]
-    }
-];
+let data = [];
 
 
 
@@ -45,8 +20,20 @@ function getQuestion(contador)
     makeQuestion(question);
 
 }
-function getNext()
+function getNext(set)
 {
+    if(set == 1){
+        data = set1;
+    }
+    else if( set ==3 ){
+        data = set3;
+    }
+
+    console.log(data);
+
+   
+
+    
     respuestas = [];
     console.log(contador);
     if(contador == data.length)

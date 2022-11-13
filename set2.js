@@ -550,6 +550,508 @@ let set2 = [
         ]
     },
     {
+        "id": "21",
+        "pregunta" : "A team of developers is working on a source-driven project that allows them to work independetly, with many different org configurations.<br>"+
+        "Which type of Salesforce orgs should they use for their development?",
+        "respuestasCorrectas": ["1"],
+        "tipo": "Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "Developer sandboxes"
+            },
+            {
+                "id" : "2",
+                "titulo" : "Developer orgs"
+            },
+            {
+                "id" : "3",
+                "titulo" : "Full copy sandboxs"
+            },
+            {
+                "id" : "4",
+                "titulo" : "scratch orgs"
+            }
+        ]
+    },
+    {
+        "id": "22",
+        "pregunta" : "Universal Containers has a Visualforce page that displays a tbale of every Container__c being rented by a given Account. Recently this page is a failing with a view limit because some of the customers rent over 10.000 containers",
+        "respuestasCorrectas": ['1'],
+        "tipo": "Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "Implement pagination with a StandardSetController"
+            },
+            {
+                "id" : "2",
+                "titulo" : "Implement pagination with an OffsetController"
+            },
+            {
+                "id" : "3",
+                "titulo" : "Use JavaScript remoting with SOQL Offset"
+            },
+            {
+                "id" : "4",
+                "titulo" : "Use lazy loading and traslend list variable"
+            }
+        ]
+    },
+    {
+        "id": "23",
+        "pregunta" : "Universal Containers hires a developer to build a custom search page to help users find the Accounts they want. Users will be able to search on Name, Descripction, and custom comments field.<br>"+
+        "Which considerations should the developer be aware of when deciding between SOQL and SOSL",
+        "respuestasCorrectas": ["3","4"],
+        "tipo": "Multiple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "SOSL is able to return more records"
+            },
+            {
+                "id" : "2",
+                "titulo" : "SOQL is faster for text searches"
+            },
+            {
+                "id" : "3",
+                "titulo" : "SOQL is able to return more records"
+            },
+            {
+                "id" : "4",
+                "titulo" : "SOSL is a faster for text searches"
+            }
+        ]
+    },
+    {
+        "id": "24",
+        "pregunta" : "How sould a developer write unit test for private method in an Apex class?",
+        "respuestasCorrectas": ["3"],
+        "tipo": "Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "Mark the Apex class as global"
+            },
+            {
+                "id" : "2",
+                "titulo" : "Use the SeeAllData annotation"
+            },
+            {
+                "id" : "3",
+                "titulo" : "Use the TestVisible annotation"
+            },
+            {
+                "id" : "4",
+                "titulo" : "Add a test method in the Apex class"
+            }
+        ]
+    },
+    {
+        "id": "25",
+        "pregunta" : "Which statement describes the execution order when triggers are associated to the same object and event?",
+        "respuestasCorrectas": ["3"],
+        "tipo": "Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "Triggers are executed in the order they are modified"
+            },
+            {
+                "id" : "2",
+                "titulo" : "Triggers are executed alphabetically by trigger name"
+            },
+            {
+                "id" : "3",
+                "titulo" : "Trigger execution order cannot be guaranteed"
+            },
+            {
+                "id" : "4",
+                "titulo" : "Triggers are executed in the order they are created"
+            }
+        ]
+    },
+    {
+        "id": "26",
+        "pregunta" : "A developer must implement a CheckPaymentProcessor clas that provides check processing payment capabilities that adhere to what is defined for paylments in the PaymentProcessor interface.<br><br>"+
+        "public interface PaymentProcessor{<br>"+
+        " void pay(Decimal amount();<br>"+
+        "}<br>"+
+        "Which implementation is correct to use the PaymentProcessor interface class?",
+        "respuestasCorrectas": ["2"],
+        "tipo": "Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "public class CheckPaymentProcessor extends PaymentProcessor{<br>"+
+                " public void pay(Decimal ammount)<br>"+
+                "}"
+
+            },
+            {
+                "id" : "2",
+                "titulo" : "public class CheckPaymentProcessor implements PaymentProcessor{<br>"+
+                " public void pay(Decimal ammount){ /* code....*/}<br>"+
+                "}"
+            },
+            {
+                "id" : "3",
+                "titulo" : "public class CheckPaymentProcessor extends PaymentProcessor{<br>"+
+                " public void pay(Decimal ammount){ /* code....*/}<br>"+
+                "}"
+            },
+            {
+                "id" : "4",
+                "titulo" : "public class CheckPaymentProcessor implements PaymentProcessor{<br>"+
+                " public void pay(Decimal ammount)<br>"+
+                "}"
+            }
+        ]
+    },
+    {
+        "id": "27",
+        "pregunta" : "A business has a priority Order Management Syste (OMS) that creates orders from their website and fulfills the ordes. When the order is created in the OMS, an integration also creates an order record in Salesforce and relates it to the contact as identified by the email on the order. As the order goes through different stages in the OMS, the integration also updates it in salesforce.<br>"+
+        "It is notices that each update from the OMS creats a new order record in Salesforce<br>"+
+        "Which two actios will prevent the duplicate order records from being created in Salesforce?",
+        "respuestasCorrectas": ["2","4"],
+        "tipo": "Multiple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "Use the emial on the contact record as an external ID"
+            },
+            {
+                "id" : "2",
+                "titulo" : "Write a before trigger on the order object to delete any duplictes"
+            },
+            {
+                "id" : "3",
+                "titulo" : "Use the order number from the OMS as an external ID"
+            },
+            {
+                "id" : "4",
+                "titulo" : "Ensure that the order number in the OMS is unique"
+            }
+        ]
+    },
+    {
+        "id": "28",
+        "pregunta" : "A develper wants to get access to the standard price book in the org while writing a test classthat covers an OpportunityLineItem trigger<br>"+
+        "Which method allows access to the price book?",
+        "respuestasCorrectas": ["1"],
+        "tipo": "Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "Use Test.getStandardPricebookId() to get standard price book ID."
+            },
+            {
+                "id" : "2",
+                "titulo" : "Use Test.loadData() and a static resource to load a standard price book"
+            },
+            {
+                "id" : "3",
+                "titulo" : "Use  @TestVisible to allow the test method to see the standard price book"
+            },
+            {
+                "id" : "4",
+                "titulo" : "use @IsTest(SeeAlData=true) and delete the existing standard price book"
+            }
+        ]
+    },
+    {
+        "id": "29",
+        "pregunta" : "A developer has a Visualforce page nd custom controller to save Account records. The developer wants to display any validation rule violations to the use.<br>"+
+        "How can the developer maike sure that validation rule violations are displayed?",
+        "respuestasCorrectas": ["4"],
+        "tipo": "Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "Use a try/catch with a custom exception class"
+            },
+            {
+                "id" : "2",
+                "titulo" : "Perform the DML using the Database.upsert() method"
+            },
+            {
+                "id" : "3",
+                "titulo" : "Add custom controller attributes to display the message"
+            },
+            {
+                "id" : "4",
+                "titulo" : "include <apex:message> on the Visualforce page"
+            }
+        ]
+    },
+    {
+        "id": "30",
+        "pregunta" : "A develper is migrating a Visualforce page into a Lightning web component.<br>"+
+        "The Visualforce page shows informatiion about a single record, The developer decides to use Lightning Data Service to acess record data.<br>"+
+        "Which security consideration should the developer be aware of?",
+        "respuestasCorrectas": ["1"],
+        "tipo": "Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "Lightning Data Service handles sharing rules and field-level security"
+            },
+            {
+                "id" : "2",
+                "titulo" : "the isAccesible() method must be used for field-level access check"
+            },
+            {
+                "id" : "3",
+                "titulo" :  "the with sharing keyword  must be used to enforce sharing rules"
+            },
+            {
+                "id" : "4",
+                "titulo" : "Lightning Data Service ignores field-level security"
+            }
+        ]
+    },
+    {
+        "id": "31",
+        "pregunta" : "Since Aura application ecents follow the traditional publish-subscribe model, which is used to fire an event?",
+        "respuestasCorrectas": ["4"],
+        "tipo": "Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "registerEvent()"
+            },
+            {
+                "id" : "2",
+                "titulo" : "fireEvent()"
+            },
+            {
+                "id" : "3",
+                "titulo" : "emit()"
+            },
+            {
+                "id" : "4",
+                "titulo" : "fire()"
+            }
+        ]
+    },
+    {
+        "id": "32",
+        "pregunta" : "A developer is debugging the following code to determine why Accounts are not being created<br>"+
+        "List<Account> accts =getAccounts() //getAcounts implemented elsewhere<br>"+
+        "Database.insert(accts,false)<br>"+
+        "Which should the code be altered to help debug the issue?",
+        "respuestasCorrectas": ["2"],
+        "tipo": "Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "Change the DML statement to insert accts"
+            },
+            {
+                "id" : "2",
+                "titulo" : "Collect the insert method retun value in a SaveReslt variable"
+            },
+            {
+                "id" : "3",
+                "titulo" : "Set the second insert method parameter to true"
+            },
+            {
+                "id" : "4",
+                "titulo" : "Add a try-catch around the insert method"
+            }
+        ]
+    },
+    {
+        "id": "33",
+        "pregunta" : "A developer must create a Lightning component that allows users to input Contact record information to create a Contact record, incluidind a Salary__c custom field<br>"+
+        "What should the developer use, along with a lightning-record-edit-form, so that Salary__c field functions as a currency input and is only viewable and editable by users that hace the correct field level permissions on Salary__c?",
+        "respuestasCorrectas": ["4"],
+        "tipo": "Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "<lightning-input type='number' value='Salary__c' formatter='currency'></lightning-input>"
+            },
+            {
+                "id" : "2",
+                "titulo" : "<lightning-input-currency value='Salary__c'></lightning-input-currency>"
+            },
+            {
+                "id" : "3",
+                "titulo" : "<lightning-formatted-number value='Salary__c' format-style='currency'></lightning-formatted-number>"
+            },
+            {
+                "id" : "4",
+                "titulo" : "<lightning-input-field field-name='Salary__c' formatter='currency'></lightning-input-field>"
+            }
+        ]
+    },
+    {
+        "id": "34",
+        "pregunta" : "Universal Containers uses Master-Detail relationship and stores the availability date on each Line Item of an Order and Orders are only shipped when all of the Line items are available.<br>"+
+        "Which  method should be used to calculate the estimated ship date for an Order?",
+        "respuestasCorrectas": ["1"],
+        "tipo": "Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "Use a MAX Roll-up Summary field on the latest availability date fields"
+            },
+            {
+                "id" : "2",
+                "titulo" : "Use a CELLING formula on each of the latest availability date fields"
+            },
+            {
+                "id" : "3",
+                "titulo" : "Use a DAYS formula on each of the availability date fields and a COUNT Roll-Up Summary field on the Order"
+            },
+            {
+                "id" : "4",
+                "titulo" : "Use a LATEST formula on each of the latest availbality date fields"
+            }
+        ]
+    },
+    {
+        "id": "35",
+        "pregunta" : "A developer created a child Lightning web component nested inside a parent Lightning web component. The Parent component needs to pass a string value to the child component<br>"+
+        "In which two ways can this be accomplished?",
+        "respuestasCorrectas": ["3","4"],
+        "tipo": "Multiple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "The parent component can use the Apex controller class to send data to the child component"
+            },
+            {
+                "id" : "2",
+                "titulo" : "The parent component can invoke a method in the child component"
+            },
+            {
+                "id" : "3",
+                "titulo" : "The parent component can use a custom event to pass the data to the child component"
+            },
+            {
+                "id" : "4",
+                "titulo" : "The parent component can use a public property to pass the data to the child component"
+            }
+        ]
+    },
+    {
+        "id": "36",
+        "pregunta" : "A developer has a single custom controller class that works with a Visualforce Wizard to support creating and editing multiple sObjects. The wizard accepts data from user inputs across multiple Visualforce pages and from paramater on the initial URL<br>"+
+        "Which three statements are useful inside the unit test to effectivelly test the custom controller?",
+        "respuestasCorrectas": ["2","3","4"],
+        "tipo": "Multiple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "public ExtendedController(ApexPages.StandardController cntrl){}"
+            },
+            {
+                "id" : "2",
+                "titulo" : "Test.setCurrentPage(pageRef)"
+            },
+            {
+                "id" : "3",
+                "titulo" : "String nextPage = controller.save().getUrl();"
+            },
+            {
+                "id" : "4",
+                "titulo" : "ApexPage.currentPage().getParameters().put('input', 'TestValue')"
+            },
+            {
+                "id" : "5",
+                "titulo" : "insert pageRef;"
+            }
+        ]
+    },
+    {
+        "id": "37",
+        "pregunta" : "A developer created these three Rollup Summary filds in the custom object Project__c: (Total_timesheets__c, Total_Approved_Timesheets__c, Total_Rejected_Timesheet__c)<br>"+
+        "The developer is asked to create a new field that shows the ratio between rejected and approved timesheets for a given project.<br>"+
+        "Which should the developer use to implement the business requirement in order to minimize maintenance overhead?",
+        "respuestasCorrectas": ["4"],
+        "tipo": "Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "Record-triggered flow"
+            },
+            {
+                "id" : "2",
+                "titulo" : "Apex trigger"
+            },
+            {
+                "id" : "3",
+                "titulo" : "Field update actions"
+            },
+            {
+                "id" : "4",
+                "titulo" : "Formula field"
+            }
+        ]
+    },
+    {
+        "id": "38",
+        "pregunta" : "Given the following Anonymous block:<br>"+
+        "List<Case< casesToUpdate = new List<Case>();<br>"+
+        "for(Case thisCase:[SELECT Id, Status FROM LIMIT 50000]){<br>"+
+        "  thisCase.Status = 'Working';<br>"+
+        '  caseToUpdate.add(thisCase);<br>'+
+        ' }<br>'+
+        'try{<br>'+
+        ' Database.update(casesToUpdate,false);<br>'+
+        '}catch(Exception e){<br>'+
+        ' System.debug(e.getMessage());'+
+        '}<br><br>'+
+        'What should a developer considerer for an enviroment that has over 10.000 Case records?',
+        "respuestasCorrectas": ["3"],
+        "tipo": "Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "The try-catch block will handle any DML exceptions thrown"
+            },
+            {
+                "id" : "2",
+                "titulo" : "The transaction will succeed and changes will be committed"
+            },
+            {
+                "id" : "3",
+                "titulo" : "The transaction will fail due to exceeding the governor limit"
+            },
+            {
+                "id" : "4",
+                "titulo" : "the try-catch block will handle exceptions thrown by governor limits"
+            }
+        ]
+    },
+    {
+        "id": "39",
+        "pregunta" : "Universal Containers has a large number of custom applications that wee built using a third-party JavaScript framework and exposed using Visualforce pages. The company wants to update these applications to apply styling that resembles the look and feel of Lightning Experience.<br>"+
+        "What should the developer do to fufill the business request in the quickest and most effective manner?",
+        "respuestasCorrectas": ["4"],
+        "tipo": "Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "Set the attribute enableLightning to true in the definition"
+            },
+            {
+                "id" : "2",
+                "titulo" : "Rewrite all Visualforce pages as Lightning components"
+            },
+            {
+                "id" : "3",
+                "titulo" : "Enable Available for Lightning Experience, Lightning Communities, and the mobile app on Visualforce pages used by the custom application"
+            },
+            {
+                "id" : "4",
+                "titulo" : "Incorporate the Salesforce Lightning Design System CSS stylesheet into the JavaScript applications"
+            }
+        ]
+    },
+    {
         "id": "40",
         "pregunta" : "A Lightning component has a wired property, searchResults, that stores a list of Opportunities. <br> <br> Which definition of the Apex method, to which the searchResults property is wired, should be used?" ,
         "respuestasCorrectas": ["1"],

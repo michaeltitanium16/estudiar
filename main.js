@@ -8,12 +8,8 @@ let contador = 0 ;
 function getQuestion(contador)
 {
     respuestas = [];
-    let question = data.filter(function(value)
-    {
-        return value.id ==  contador.toString();
-    });
 
-    question = question[0];
+    question = data[contador];
 
     makeQuestion(question);
 
@@ -34,7 +30,7 @@ function getExam(set)
             
              break;
 
-        case "ramdom":{
+        case "random":{
 
             alert('aun no ');
             //se deben cambiar los id de las preguntas
@@ -45,6 +41,7 @@ function getExam(set)
             break;
     }
 
+    data = reOrdenar(data);
     getNext();
     timer(1800);
 }
@@ -76,14 +73,7 @@ function getBack()
 
 function comprobar()
 {
-    console.log
-    let question = data.filter(function(value)
-    {
-        return value.id ==  contador.toString();
-    });
-
-    question = question[0];
-
+    question = data[contador];
     validateQuestion(question.respuestasCorrectas);
 }
 
@@ -154,8 +144,6 @@ function makeQuestion(question)
 
 }
 
-
-
 function timer(duration) {
     let timer = duration, minutes, seconds;
     let intervalId = setInterval(function () {
@@ -173,6 +161,25 @@ function timer(duration) {
         }
     }, 1000);
 }
+
+function reOrdenar(arreglo){
+
+    console.log(arreglo);
+    let currentIndex = arreglo.length,  randomIndex;
+    
+    while (currentIndex != 0) {
+    
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex--;
+    
+        [arreglo[currentIndex], arreglo[randomIndex]] = [
+        arreglo[randomIndex], arreglo[currentIndex]];
+    }
+    
+    return arreglo;
+}
+      
+
 
 
 /*<p> La pregunta</p>

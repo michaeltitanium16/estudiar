@@ -1,8 +1,6 @@
 
 let data = [];
 
-
-
 let respuestas = [];
 
 let contador = 0 ;
@@ -20,33 +18,45 @@ function getQuestion(contador)
     makeQuestion(question);
 
 }
-function getNext(set)
+
+function getExam(set)
 {
-    if(set == 1){
-        data = set1;
-    }
-    else if( set ==2 ){
-        data = set2;
-    }
-    else if( set =3 ){
-        data = set3;
-    }
+    switch (set) {
+        case "1": data = set1
 
-    console.log(data);
+            break;
+        
+        case "2": data = set2
+            
+            break;
 
-   
+        case "3": data = set3
+            
+             break;
 
+        case "ramdom":{
+
+            alert('aun no ');
+            //se deben cambiar los id de las preguntas
+        }
     
+            break;
+        default:
+            break;
+    }
+
+    getNext();
+    timer(1800);
+}
+function getNext()
+{    
     respuestas = [];
-    console.log(contador);
     if(contador == data.length)
     {
         alert('Estas es la ultima pregunta');
         return;
     }
     contador++;
-
-  
 
     getQuestion(contador);
 
@@ -142,6 +152,26 @@ function makeQuestion(question)
     $('#questionSection').empty().append(bloque);
 
 
+}
+
+
+
+function timer(duration) {
+    let timer = duration, minutes, seconds;
+    let intervalId = setInterval(function () {
+        minutes = parseInt(timer / 60, 10);
+        seconds = parseInt(timer % 60, 10);
+
+        minutes = minutes < 10 ? "0" + minutes : minutes;
+        seconds = seconds < 10 ? "0" + seconds : seconds;
+        text = "<p>Tiempo restante: " +  minutes + ":" + seconds+"</p>";
+        $('#contador').removeClass('d-none').empty().append(text);
+
+        if (--timer < 0) {
+            clearInterval(intervalId);
+            alert("se acabo tu tiempo");
+        }
+    }, 1000);
 }
 
 

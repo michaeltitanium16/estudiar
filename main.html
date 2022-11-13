@@ -10,20 +10,27 @@
         <script type="text/javascript" src="./set1.js"></script>
         <script type="text/javascript" src="./set2.js"></script>
         <script type="text/javascript" src="./set3.js"></script>
-
-
         <body>
             <div class="container">
 				<div class="row">
-					<div class="px-4 py-5 my-5 text-center">
+					<div class=" my-2 text-center">
+						
+						<div class="alert alert-warning d-none" role="alert" id="contador">
+							
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="px-4 py-5 my-2 text-center">
 						<div id="questionSection">
 							<img class="d-block mx-auto mb-4" src="salesforce.png" alt="">
 							<h1 class="display-5 fw-bold">Centro de estudios Salesforce</h1>
 							<p class="lead mb-4">Estudia duro para tu certificación</p>
 							<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-							  <button type="button" onclick="getNext(1)" class="btn btn-primary btn-lg px-4 gap-3">Examen 1</button>
-                <button type="button" onclick="getNext(2)" class="btn btn-primary btn-lg px-4 gap-3">Examen 2</button>
-                <button type="button" onclick="getNext(3)" class="btn btn-primary btn-lg px-4 gap-3">Examen 3</button>
+							  	<button type="button" onclick="getExam('1')" class="btn btn-primary btn-lg px-4 gap-3">Examen 1</button>
+								<button type="button" onclick="getExam('2')" class="btn btn-primary btn-lg px-4 gap-3">Examen 2</button>
+								<button type="button" onclick="getExam('3')" class="btn btn-primary btn-lg px-4 gap-3">Examen 3</button>
+								<button type="button" onclick="getExam('ramdom')" class="btn btn-primary btn-lg px-4 gap-3">Examen Ramdom</button>
 							</div>
 						</div>
 					</div>

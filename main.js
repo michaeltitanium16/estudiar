@@ -53,8 +53,10 @@ function getNext()
         alert('Estas es la ultima pregunta');
         return;
     }
-    contador++;
-
+    if(contador != 0)
+    {
+        contador++;
+    }
     getQuestion(contador);
 
 }

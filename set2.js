@@ -2,7 +2,7 @@ let set2 = [
     {
         "id": "1",
         "pregunta" : "What are to ways a developer can get the status of an enqueued job for a class that implements the queueable interface?",
-        "respuestasCorrectas": ["2,3"],
+        "respuestasCorrectas": ["2,4"],
         "tipo": "Multiple",
         "respuestas": [
             {
@@ -25,7 +25,7 @@ let set2 = [
     },
     {
         "id": "2",
-        "pregunta" : "A custom picklist field, 'Food_Preference__c', exists on a custom object. The picklist contains the following optios: 'Vegan', 'Kosher', 'No Preference'. The developer must ensure a values is populated every time a rcord is created or updated.<br> What is the optimal way to ensure a value is selected every time a record is saved",
+        "pregunta" : "A custom picklist field, 'Food_Preference__c', exists on a custom object. The picklist contains the following optios: 'Vegan', 'Kosher', 'No Preference'. The developer must ensure a values is populated every time a record is created or updated.<br> What is the optimal way to ensure a value is selected every time a record is saved",
         "respuestasCorrectas": ["1"],
         "tipo": "Simple",
         "respuestas": [
@@ -43,7 +43,7 @@ let set2 = [
             },
             {
                 "id" : "4",
-                "titulo" : "Write an Apex Trigger to ensure a value is selectd"
+                "titulo" : "Write an Apex Trigger to ensure a value is selected"
             }
         ]
     },
@@ -56,17 +56,17 @@ let set2 = [
                "}<br>"+
             "update thisAccount;<br>"+
         "}<br>"+
-        "when the code executes, what happends as a result of the apex transaction?",
+        "when the code executes, what happens as a result of the Apex transaction?",
         "respuestasCorrectas": ["4"],
         "tipo": "Simple",
         "respuestas": [
             {
                 "id" : "1",
-                "titulo" : "If executed in an asynchronous context, the Apex transaction is likely to fail bu exceeding DML governor limit"
+                "titulo" : "If executed in an asynchronous context, the Apex transaction is likely to fail by exceeding DML governor limit"
             },
             {
                 "id" : "2",
-                "titulo" : "If executed in a synchronous context, the Apex transaction is likely to fail bu exceeding DML governor limit"
+                "titulo" : "If executed in a synchronous context, the Apex transaction is likely to fail by exceeding DML governor limit"
             },
             {
                 "id" : "3",
@@ -105,7 +105,7 @@ let set2 = [
     },
     {
         "id": "5",
-        "pregunta" : "An org has an existing flow that creats an Opportunity with a Update Records element. A developer mast update the flow to also create a Contact and store the created Contact's ID on the opportunity. <br>"+
+        "pregunta" : "An org has an existing flow that creates an Opportunity with a Update Records element. A developer must update the flow to also create a Contact and store the created Contact's ID on the Opportunity. <br>"+
         "Which update must the developer mmake in the flow?",
         "respuestasCorrectas": ["3"],
         "tipo": "Simple",
@@ -131,13 +131,14 @@ let set2 = [
     {
         "id": "6",
         "pregunta" : "What is the result of the following code?<br>"+
+        "Account a = New Account()<br>"+
         "Database.insert(a,false)",
         "respuestasCorrectas": ["2"],
         "tipo": "Simple",
         "respuestas": [
             {
                 "id" : "1",
-                "titulo" : "The record will not be created and an exception wil be thrown"
+                "titulo" : "The record will not be created and an exception will be thrown"
             },
             {
                 "id" : "2",
@@ -145,7 +146,7 @@ let set2 = [
             },
             {
                 "id" : "3",
-                "titulo" : "the record will be created and no error will be reported"
+                "titulo" : "The record will be created and no error will be reported"
             },
             {
                 "id" : "4",
@@ -192,7 +193,7 @@ let set2 = [
         "respuestas": [
             {
                 "id" : "1",
-                "titulo" : "View the code coverage percentage fo the class using the Overall Code Coverage panel in the Deveveloper Console Tests tab"
+                "titulo" : "View the code coverage percentage for the class using the Overall Code Coverage panel in the Deveveloper Console Tests tab"
             },
             {
                 "id" : "2",
@@ -210,7 +211,7 @@ let set2 = [
     },
     {
         "id": "9",
-        "pregunta" : "Universal Containers recently transitioned from Classic to Ligthning Experience. <br>"+
+        "pregunta" : "Universal Containers recently transitioned from Classic to Lightning Experience. <br>"+
         "One of its business processes requires certain values from the Opportunity object to be sent via an HHTP Rest callout to its external order management system based on an ad-hoc basis when the user presses a custom button on the Opportunity detail page. Example values are as follows (Name, Ammount, Account)<br>"+
         "Wich two methods should the developer implement to fufill the business requeriment?",
         "respuestasCorrectas": ["1","3"],
@@ -236,14 +237,14 @@ let set2 = [
     },
     {
         "id": "10",
-        "pregunta" : "A developer is creating a page that allows users to create multiple Opportunitues. The developer is asked to verify the current user`s default Opportunity record tupe, and set certain default values based on the record type before inserting the record.<br>"+
-        "How can the developer find the current user's defaut record type?",
+        "pregunta" : "A developer is creating a page that allows users to create multiple Opportunities. The developer is asked to verify the current user's default Opportunity record type, and set certain default values based on the record type before inserting the record.<br>"+
+        "How can the developer find the current user's default record type?",
         "respuestasCorrectas": ["1"],
         "tipo": "Simple",
         "respuestas": [
             {
                 "id" : "1",
-                "titulo" : "Use Opprtunity.SObjectType.getDescribe().getRecordTypeInfos() to get a list of redord types, and iterate throught them until isDefaultRecordTypeMApping() is true"
+                "titulo" : "Use Opprtunity.SObjectType.getDescribe().getRecordTypeInfos() to get a list of redord types, and iterate through them until isDefaultRecordTypeMApping() is true"
             },
             {
                 "id" : "2",
@@ -251,7 +252,7 @@ let set2 = [
             },
             {
                 "id" : "3",
-                "titulo" : "Query the Profile where the ID equals userinfo.getProfileId() and then use the profile.Opportunity.getDefaultRecurdtype() method"
+                "titulo" : "Query the Profile where the ID equals userinfo.getProfileId() and then use the profile.Opportunity.getDefaultRecordtype() method"
             },
             {
                 "id" : "4",
@@ -300,7 +301,7 @@ let set2 = [
             },
             {
                 "id" : "3",
-                "titulo" : "A custom exception class namemust end whit 'Exception"
+                "titulo" : "A custom exception class name must end whit 'Exception'"
             },
             {
                 "id" : "4",
@@ -320,7 +321,7 @@ let set2 = [
         "respuestas": [
             {
                 "id" : "1",
-                "titulo" : " Content asset file"
+                "titulo" : "Content asset file"
             },
             {
                 "id" : "2",
@@ -429,11 +430,11 @@ let set2 = [
         "respuestas": [
             {
                 "id" : "1",
-                "titulo" : "A record triger flow on the Opportunity object"
+                "titulo" : "A record trigger flow on the Opportunity object"
             },
             {
                 "id" : "2",
-                "titulo" : "An aproval process on the Opporunity object"
+                "titulo" : "An approval process on the Opporunity object"
             },
             {
                 "id" : "3",
@@ -447,7 +448,7 @@ let set2 = [
     },
     {
         "id": "18",
-        "pregunta" : "A developer must create a DrawList calss that provides capabilities definied in the Sortable and Drawable interfaces<br>"+
+        "pregunta" : "A developer must create a DrawList class that provides capabilities defined in the Sortable and Drawable interfaces<br>"+
         "public interface Sortable {<br>"+
             "void sort();<br>"+
         "}<br>"+
@@ -490,7 +491,8 @@ let set2 = [
     },
     {
         "id": "19",
-        "pregunta" : "Which code sgement shows the correct declaration of the Web Service Class?",
+        "pregunta" : "A developer needs to implement a custom SOAP Web Service tha is used by an external Web application. The developer chooses to include helper methods that are noy used by the Web Application in the implementation of the Web Service Class<br>"+
+        "Which code sgement shows the correct declaration of the Web Service Class?",
         "respuestasCorrectas": ["1"],
         "tipo": "Simple",
         "respuestas": [
@@ -553,7 +555,7 @@ let set2 = [
         "id": "21",
         "pregunta" : "A team of developers is working on a source-driven project that allows them to work independetly, with many different org configurations.<br>"+
         "Which type of Salesforce orgs should they use for their development?",
-        "respuestasCorrectas": ["1"],
+        "respuestasCorrectas": ["4"],
         "tipo": "Simple",
         "respuestas": [
             {
@@ -570,13 +572,13 @@ let set2 = [
             },
             {
                 "id" : "4",
-                "titulo" : "scratch orgs"
+                "titulo" : "Scratch orgs"
             }
         ]
     },
     {
         "id": "22",
-        "pregunta" : "Universal Containers has a Visualforce page that displays a tbale of every Container__c being rented by a given Account. Recently this page is a failing with a view limit because some of the customers rent over 10.000 containers",
+        "pregunta" : "Universal Containers has a Visualforce page that displays a table of every Container__c being rented by a given Account. Recently this page is a failing with a view limit because some of the customers rent over 10.000 containers",
         "respuestasCorrectas": ['1'],
         "tipo": "Simple",
         "respuestas": [
@@ -600,7 +602,7 @@ let set2 = [
     },
     {
         "id": "23",
-        "pregunta" : "Universal Containers hires a developer to build a custom search page to help users find the Accounts they want. Users will be able to search on Name, Descripction, and custom comments field.<br>"+
+        "pregunta" : "Universal Containers hires a developer to build a custom search page to help users find the Accounts they want. Users will be able to search on Name, Description, and custom comments field.<br>"+
         "Which considerations should the developer be aware of when deciding between SOQL and SOSL",
         "respuestasCorrectas": ["3","4"],
         "tipo": "Multiple",
@@ -673,7 +675,7 @@ let set2 = [
     },
     {
         "id": "26",
-        "pregunta" : "A developer must implement a CheckPaymentProcessor clas that provides check processing payment capabilities that adhere to what is defined for paylments in the PaymentProcessor interface.<br><br>"+
+        "pregunta" : "A developer must implement a CheckPaymentProcessor class that provides check processing payment capabilities that adhere to what is defined for payments in the PaymentProcessor interface.<br><br>"+
         "public interface PaymentProcessor{<br>"+
         " void pay(Decimal amount();<br>"+
         "}<br>"+
@@ -711,18 +713,18 @@ let set2 = [
     {
         "id": "27",
         "pregunta" : "A business has a priority Order Management Syste (OMS) that creates orders from their website and fulfills the ordes. When the order is created in the OMS, an integration also creates an order record in Salesforce and relates it to the contact as identified by the email on the order. As the order goes through different stages in the OMS, the integration also updates it in salesforce.<br>"+
-        "It is notices that each update from the OMS creats a new order record in Salesforce<br>"+
-        "Which two actios will prevent the duplicate order records from being created in Salesforce?",
+        "It is notices that each update from the OMS creates a new order record in Salesforce<br>"+
+        "Which two actions will prevent the duplicate order records from being created in Salesforce?",
         "respuestasCorrectas": ["2","4"],
         "tipo": "Multiple",
         "respuestas": [
             {
                 "id" : "1",
-                "titulo" : "Use the emial on the contact record as an external ID"
+                "titulo" : "Use the email on the contact record as an external ID"
             },
             {
                 "id" : "2",
-                "titulo" : "Write a before trigger on the order object to delete any duplictes"
+                "titulo" : "Write a before trigger on the order object to delete any duplicates"
             },
             {
                 "id" : "3",
@@ -736,7 +738,7 @@ let set2 = [
     },
     {
         "id": "28",
-        "pregunta" : "A develper wants to get access to the standard price book in the org while writing a test classthat covers an OpportunityLineItem trigger<br>"+
+        "pregunta" : "A developer wants to get access to the standard price book in the org while writing a test class that covers an OpportunityLineItem trigger<br>"+
         "Which method allows access to the price book?",
         "respuestasCorrectas": ["1"],
         "tipo": "Simple",
@@ -761,8 +763,8 @@ let set2 = [
     },
     {
         "id": "29",
-        "pregunta" : "A developer has a Visualforce page nd custom controller to save Account records. The developer wants to display any validation rule violations to the use.<br>"+
-        "How can the developer maike sure that validation rule violations are displayed?",
+        "pregunta" : "A developer has a Visualforce page and custom controller to save Account records. The developer wants to display any validation rule violations to the use.<br>"+
+        "How can the developer make sure that validation rule violations are displayed?",
         "respuestasCorrectas": ["4"],
         "tipo": "Simple",
         "respuestas": [
@@ -786,7 +788,7 @@ let set2 = [
     },
     {
         "id": "30",
-        "pregunta" : "A develper is migrating a Visualforce page into a Lightning web component.<br>"+
+        "pregunta" : "A developer is migrating a Visualforce page into a Lightning web component.<br>"+
         "The Visualforce page shows informatiion about a single record, The developer decides to use Lightning Data Service to acess record data.<br>"+
         "Which security consideration should the developer be aware of?",
         "respuestasCorrectas": ["1"],
@@ -798,11 +800,11 @@ let set2 = [
             },
             {
                 "id" : "2",
-                "titulo" : "the isAccesible() method must be used for field-level access check"
+                "titulo" : "The isAccesible() method must be used for field-level access check"
             },
             {
                 "id" : "3",
-                "titulo" :  "the with sharing keyword  must be used to enforce sharing rules"
+                "titulo" :  "The with sharing keyword must be used to enforce sharing rules"
             },
             {
                 "id" : "4",
@@ -812,7 +814,7 @@ let set2 = [
     },
     {
         "id": "31",
-        "pregunta" : "Since Aura application ecents follow the traditional publish-subscribe model, which is used to fire an event?",
+        "pregunta" : "Since Aura application events follow the traditional publish-subscribe model, which is used to fire an event?",
         "respuestasCorrectas": ["4"],
         "tipo": "Simple",
         "respuestas": [
@@ -837,7 +839,7 @@ let set2 = [
     {
         "id": "32",
         "pregunta" : "A developer is debugging the following code to determine why Accounts are not being created<br>"+
-        "List<Account> accts =getAccounts() //getAcounts implemented elsewhere<br>"+
+        "List<Account> accts = getAccounts() //getAcounnts implemented elsewhere<br>"+
         "Database.insert(accts,false)<br>"+
         "Which should the code be altered to help debug the issue?",
         "respuestasCorrectas": ["2"],
@@ -849,7 +851,7 @@ let set2 = [
             },
             {
                 "id" : "2",
-                "titulo" : "Collect the insert method retun value in a SaveReslt variable"
+                "titulo" : "Collect the insert method return value in a SaveResult variable"
             },
             {
                 "id" : "3",
@@ -864,7 +866,7 @@ let set2 = [
     {
         "id": "33",
         "pregunta" : "A developer must create a Lightning component that allows users to input Contact record information to create a Contact record, incluidind a Salary__c custom field<br>"+
-        "What should the developer use, along with a lightning-record-edit-form, so that Salary__c field functions as a currency input and is only viewable and editable by users that hace the correct field level permissions on Salary__c?",
+        "What should the developer use, along with a lightning-record-edit-form, so that Salary__c field functions as a currency input and is only viewable and editable by users that have the correct field level permissions on Salary__c?",
         "respuestasCorrectas": ["4"],
         "tipo": "Simple",
         "respuestas": [
@@ -888,8 +890,8 @@ let set2 = [
     },
     {
         "id": "34",
-        "pregunta" : "Universal Containers uses Master-Detail relationship and stores the availability date on each Line Item of an Order and Orders are only shipped when all of the Line items are available.<br>"+
-        "Which  method should be used to calculate the estimated ship date for an Order?",
+        "pregunta" : "Universal Containers uses Master-Detail relationship and stores the availability date on each Line Item of an Order and Orders are only shipped when all of the Line Items are available.<br>"+
+        "Which method should be used to calculate the estimated ship date for an Order?",
         "respuestasCorrectas": ["1"],
         "tipo": "Simple",
         "respuestas": [
@@ -967,7 +969,7 @@ let set2 = [
     },
     {
         "id": "37",
-        "pregunta" : "A developer created these three Rollup Summary filds in the custom object Project__c: (Total_timesheets__c, Total_Approved_Timesheets__c, Total_Rejected_Timesheet__c)<br>"+
+        "pregunta" : "A developer created these three Rollup Summary fields in the custom object Project__c: (Total_Timesheets__c, Total_Approved_Timesheets__c, Total_Rejected_Timesheet__c)<br>"+
         "The developer is asked to create a new field that shows the ratio between rejected and approved timesheets for a given project.<br>"+
         "Which should the developer use to implement the business requirement in order to minimize maintenance overhead?",
         "respuestasCorrectas": ["4"],
@@ -1028,7 +1030,7 @@ let set2 = [
     },
     {
         "id": "39",
-        "pregunta" : "Universal Containers has a large number of custom applications that wee built using a third-party JavaScript framework and exposed using Visualforce pages. The company wants to update these applications to apply styling that resembles the look and feel of Lightning Experience.<br>"+
+        "pregunta" : "Universal Containers has a large number of custom applications that were built using a third-party JavaScript framework and exposed using Visualforce pages. The company wants to update these applications to apply styling that resembles the look and feel of Lightning Experience.<br>"+
         "What should the developer do to fufill the business request in the quickest and most effective manner?",
         "respuestasCorrectas": ["4"],
         "tipo": "Simple",

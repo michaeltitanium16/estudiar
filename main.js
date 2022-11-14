@@ -41,7 +41,7 @@ function getExam(set)
             break;
     }
 
-    data = reOrdenar(data);
+    //data = reOrdenar(data);
     getNext();
     timer(1800);
 }

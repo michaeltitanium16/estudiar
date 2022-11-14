@@ -2,7 +2,7 @@ let set2 = [
     {
         "id": "1",
         "pregunta" : "What are to ways a developer can get the status of an enqueued job for a class that implements the queueable interface?",
-        "respuestasCorrectas": ["2,4"],
+        "respuestasCorrectas": ["2","4"],
         "tipo": "Multiple",
         "respuestas": [
             {

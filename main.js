@@ -9,24 +9,22 @@ function getQuestion(contador)
 {
     respuestas = [];
 
-    question = data[contador];
-
-    makeQuestion(question);
+    makeQuestion(data[contador]);
 
 }
 
 function getExam(set)
 {
     switch (set) {
-        case "1": data = set1
+        case "1": data = set1;
 
             break;
         
-        case "2": data = set2
+        case "2": data = set2;
             
             break;
 
-        case "3": data = set3
+        case "3": data = set3;
             
              break;
 
@@ -42,21 +40,21 @@ function getExam(set)
     }
 
     //data = reOrdenar(data);
-    getNext();
+    getQuestion(contador);
     timer(1800);
 }
 function getNext()
 {    
     respuestas = [];
+
+    contador ++;
+    
     if(contador == data.length)
     {
         alert('Estas es la ultima pregunta');
         return;
     }
-    if(contador != 0)
-    {
-        contador++;
-    }
+
     getQuestion(contador);
 
 }
@@ -64,7 +62,7 @@ function getNext()
 function getBack()
 {
     respuestas = [];
-    if(contador == 1)
+    if(contador == 0)
     {
         alert('Estas es la primera pregunta');
         return;

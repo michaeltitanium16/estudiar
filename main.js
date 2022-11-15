@@ -79,16 +79,23 @@ function comprobar()
 
 function validateQuestion(respuestasCorrectas)
 {
+    var myToastEl = document.getElementById('myToast')
+    var myToast = bootstrap.Toast.getOrCreateInstance(myToastEl)
 
     if (sameMembers(respuestas,respuestasCorrectas) == true)
     {
-        alert('Correcto');
+        $("#myToast").removeClass('bg-danger').addClass('bg-success');
+        $("#toastText").text('Correcto!')
+        myToast.show();
         this.getNext();
     }
     else
     {
-        alert('Incorrecto');
+        $("#myToast").removeClass('bg-success').addClass('bg-danger');
+        $("#toastText").text('Incorrecto!')
+        myToast.show();
     }
+   
 
 }
 
@@ -103,17 +110,17 @@ function sameMembers(arr1, arr2)
 function setvalue(event)
 {
     var checkbox = document.getElementById(event.toString());
- 
-    if (checkbox.checked != true)
-    {
-            respuestas = respuestas.filter(function(item) {
+     if(checkbox.checked == false)
+     {
+        checkbox.checked = true;
+        respuestas.push(event.toString());
+     }
+     else{
+        checkbox.checked = false;
+        respuestas = respuestas.filter(function(item) {
             return item !== event.toString();
         })
-    }
-    else
-    {
-        respuestas.push(event.toString());
-    }
+     }
 }
 
 function makeQuestion(question)
@@ -127,9 +134,9 @@ function makeQuestion(question)
         
         question.respuestas.forEach(function(value)
         {
-            bloque+= '<li class="list-group-item">';
+            bloque+= '<li class="list-group-item" onclick="setvalue('+value.id+')">';
             bloque+= '<input class="form-check-input me-1" type="checkbox" onclick="setvalue('+value.id+')" value="'+value.id+'"  id="'+value.id+'"  aria-label="...">';
-            bloque+= value.titulo;
+            bloque+= '<h5>'+value.titulo+'<h5>';
             bloque+='</li>';
         });
         bloque+= '</ul>';

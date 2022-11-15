@@ -53,7 +53,7 @@ let set1 = [
         "id": "3",
         "pregunta" : "A PrimaryId__c custom field exists on the Candidate__c custom object. The field is used to store each candidate's id number and is marked as Unique in the schema definition. <br> As part of a data enrichment process, Universal Containers has a CSV file that contains updated data for all candidates in the system. The file contains each Candidate's primary id as a data point. Universal Containers wants to upload this information into Salesforce, while ensuring all data rows are correctly mapped to a candidate in the system. <br> Which technique should the developer implement to streamline the data upload?" ,
         "respuestasCorrectas": ["2"],
-        "tipo": "Multiple",
+        "tipo": "Simple",
         "respuestas": [
             {
                 "id" : "1",

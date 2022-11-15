@@ -41,7 +41,7 @@ function getExam(set)
 
     //data = reOrdenar(data);
     getQuestion(contador);
-    timer(1800);
+    timer(3600);
 }
 function getNext()
 {    
@@ -131,7 +131,8 @@ function makeQuestion(question)
     console.log(question.id,question.pregunta,question.respuestas);
 
     let bloque = '<div>';
-        bloque+= '<h3>' + question.pregunta +'</h3><span>('+question.tipo+')</span><input type="hidden" id="preguntaId" value="'+question.id+'"/>';
+        bloque+= '<h3>' + question.pregunta +'</h3>';
+        bloque+='<span class="badge bg-warning text-dark">'+question.tipo + '</span><input type="hidden" id="preguntaId" value="'+question.id+'"/>';
         bloque+= '<br><br>';
         bloque+= '<ul class="list-group mb-4">';
         
@@ -190,27 +191,3 @@ function reOrdenar(arreglo){
     return arreglo;
 }
       
-
-
-
-/*<p> La pregunta</p>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                      First checkbox
-                    </li>
-                    <li class="list-group-item">
-                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                      Second checkbox
-                    </li>
-                    <li class="list-group-item">
-                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                      Third checkbox
-                    </li>
-                    <li class="list-group-item">
-                      <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
-                      Fourth checkbox
-                    </li>
-                  </ul>*/
-  
-

@@ -1,7 +1,7 @@
 let set2 = [
     {
         "id": "1",
-        "pregunta" : "What are to ways a developer can get the status of an enqueued job for a class that implements the queueable interface?",
+        "pregunta" : "What are two ways a developer can get the status of an enqueued job for a class that implements the queueable interface?",
         "respuestasCorrectas": ["2","4"],
         "tipo": "Multiple",
         "respuestas": [
@@ -25,7 +25,7 @@ let set2 = [
     },
     {
         "id": "2",
-        "pregunta" : "A custom picklist field, 'Food_Preference__c', exists on a custom object. The picklist contains the following optios: 'Vegan', 'Kosher', 'No Preference'. The developer must ensure a values is populated every time a record is created or updated.<br> What is the optimal way to ensure a value is selected every time a record is saved",
+        "pregunta" : "A custom picklist field, 'Food_Preference__c', exists on a custom object. The picklist contains the following options: 'Vegan', 'Kosher', 'No Preference'. The developer must ensure a values is populated every time a record is created or updated.<br><br> What is the optimal way to ensure a value is selected every time a record is saved",
         "respuestasCorrectas": ["1"],
         "tipo": "Simple",
         "respuestas": [
@@ -50,13 +50,13 @@ let set2 = [
     {
         "id": "3",
         "pregunta" : "Refer to the following code snippet for an environment that has more than 200 Accounts beloging to the 'Technology' industry: <br><br>" +
-        "for (Account thisAccount : [SELECT id, Industry FROM Account LIMI 150]){<br>" +
+        "for (Account thisAccount : [SELECT id, Industry FROM Account LIMIT 150]){<br>" +
             "if(thisAccount.Industry == 'Technology'){<br>" +
                "thisAcount.Is_Tech__c = true;<br>"+
                "}<br>"+
             "update thisAccount;<br>"+
-        "}<br>"+
-        "when the code executes, what happens as a result of the Apex transaction?",
+        "}<br><br>"+
+        "When the code executes, what happens as a result of the Apex transaction?",
         "respuestasCorrectas": ["4"],
         "tipo": "Simple",
         "respuestas": [
@@ -105,7 +105,7 @@ let set2 = [
     },
     {
         "id": "5",
-        "pregunta" : "An org has an existing flow that creates an Opportunity with a Update Records element. A developer must update the flow to also create a Contact and store the created Contact's ID on the Opportunity. <br>"+
+        "pregunta" : "An org has an existing flow that creates an Opportunity with a Update Records element. A developer must update the flow to also create a Contact and store the created Contact's ID on the Opportunity. <br><br>"+
         "Which update must the developer mmake in the flow?",
         "respuestasCorrectas": ["3"],
         "tipo": "Simple",
@@ -130,8 +130,8 @@ let set2 = [
     },
     {
         "id": "6",
-        "pregunta" : "What is the result of the following code?<br>"+
-        "Account a = New Account()<br>"+
+        "pregunta" : "What is the result of the following code?<br><br>"+
+        "Account a = New Account();<br>"+
         "Database.insert(a,false)",
         "respuestasCorrectas": ["2"],
         "tipo": "Simple",
@@ -156,13 +156,13 @@ let set2 = [
     },
     {
         "id": "7",
-        "pregunta" : "Refer to the following Apex code:<br>"+
-            "Integer x = 0<br>"+
+        "pregunta" : "Refer to the following Apex code:<br><br>"+
+            "Integer x = 0;<br>"+
             "do{ <br>"+
-                "x = 1<br>"+
-                "x++<br>"+
+                "x = 1;<br>"+
+                "x++;<br>"+
             "}while(x < 1)<br>"+
-            "System.debug(x)<br>"+
+            "System.debug(x);<br><br>"+
             "what is the value of x when it is written to the debug log",
         "respuestasCorrectas": ["3"],
         "tipo": "Simple",
@@ -193,7 +193,7 @@ let set2 = [
         "respuestas": [
             {
                 "id" : "1",
-                "titulo" : "View the code coverage percentage for the class using the Overall Code Coverage panel in the Deveveloper Console Tests tab"
+                "titulo" : "View the code coverage percentage for the class using the Overall Code Coverage panel in the Developer Console Tests tab"
             },
             {
                 "id" : "2",
@@ -211,8 +211,8 @@ let set2 = [
     },
     {
         "id": "9",
-        "pregunta" : "Universal Containers recently transitioned from Classic to Lightning Experience. <br>"+
-        "One of its business processes requires certain values from the Opportunity object to be sent via an HHTP Rest callout to its external order management system based on an ad-hoc basis when the user presses a custom button on the Opportunity detail page. Example values are as follows (Name, Ammount, Account)<br>"+
+        "pregunta" : "Universal Containers recently transitioned from Classic to Lightning Experience. <br><br>"+
+        "One of its business processes requires certain values from the Opportunity object to be sent via an HTTP Rest callout to its external order management system based on an ad-hoc basis when the user presses a custom button on the Opportunity detail page. Example values are as follows <br> *Name <br> *Ammount <br> *Account<br><br>"+
         "Wich two methods should the developer implement to fufill the business requeriment?",
         "respuestasCorrectas": ["1","3"],
         "tipo": "Multiple",
@@ -237,14 +237,14 @@ let set2 = [
     },
     {
         "id": "10",
-        "pregunta" : "A developer is creating a page that allows users to create multiple Opportunities. The developer is asked to verify the current user's default Opportunity record type, and set certain default values based on the record type before inserting the record.<br>"+
+        "pregunta" : "A developer is creating a page that allows users to create multiple Opportunities. The developer is asked to verify the current user's default Opportunity record type, and set certain default values based on the record type before inserting the record.<br><br>"+
         "How can the developer find the current user's default record type?",
         "respuestasCorrectas": ["1"],
         "tipo": "Simple",
         "respuestas": [
             {
                 "id" : "1",
-                "titulo" : "Use Opprtunity.SObjectType.getDescribe().getRecordTypeInfos() to get a list of redord types, and iterate through them until isDefaultRecordTypeMApping() is true"
+                "titulo" : "Use Opprtunity.SObjectType.getDescribe().getRecordTypeInfos() to get a list of redord types, and iterate through them until isDefaultRecordTypeMapping() is true"
             },
             {
                 "id" : "2",
@@ -262,7 +262,7 @@ let set2 = [
     },
     {
         "id": "11",
-        "pregunta" : "A developer wants to mark each Account in a List<Account> as either Active or Inactive, based on the value in the LastModifiedDate field of each Account being greater than 90 days in the past.<br>"+
+        "pregunta" : "A developer wants to mark each Account in a List<xpm><Account></xmp> as either Active or Inactive, based on the value in the LastModifiedDate field of each Account being greater than 90 days in the past.<br>"+
         "Which Apex technique shoudld the developer use?",
         "respuestasCorrectas": ["1"],
         "tipo": "Simple",
@@ -337,7 +337,7 @@ let set2 = [
             },
             {
                 "id" : "5",
-                "titulo" : "static resources"
+                "titulo" : "Static resources"
             }
         ]
     },
@@ -368,7 +368,7 @@ let set2 = [
     },
     {
         "id": "15",
-        "pregunta" : "Cloud Kicks has a multti-screen flow that its call center agents use when handling inbound service desk calls.<br>"+
+        "pregunta" : "Cloud Kicks has a multi-screen flow that its call center agents use when handling inbound service desk calls.<br>"+
         "At one of steps in the flow, the agents should be presented with a list of order numbers and dates that are retrieved from an external order management system in real time and displayed on the screen.<br>"+
         "What should a develper use to satisfy this requirement?",
         "respuestasCorrectas": ["2"],
@@ -423,8 +423,8 @@ let set2 = [
     },
     {
         "id": "17",
-        "pregunta" : "A developer is asked to prevent anyone other than a user with Sales Manager profile from changing the Opporunity Status to Closed Lost if the lost reason is blank.<br>"+
-        "Which automation allows the developer to satisfy the requirement in the most efficent manner?",
+        "pregunta" : "A developer is asked to prevent anyone other than a user with Sales Manager profile from changing the Opporunity Status to Closed Lost if the lost reason is blank.<br><br>"+
+        "Which automation allows the developer to satisfy the requirement in the most efficient manner?",
         "respuestasCorrectas": ["4"],
         "tipo": "Simple",
         "respuestas": [
@@ -452,7 +452,7 @@ let set2 = [
         "public interface Sortable {<br>"+
             "void sort();<br>"+
         "}<br>"+
-        "public interface Sortable {<br>"+
+        "public interface Drawable {<br>"+
             "void draw();<br>"+
         "}<br>"+
         "Which is the correct implementation",
@@ -491,8 +491,8 @@ let set2 = [
     },
     {
         "id": "19",
-        "pregunta" : "A developer needs to implement a custom SOAP Web Service tha is used by an external Web application. The developer chooses to include helper methods that are noy used by the Web Application in the implementation of the Web Service Class<br>"+
-        "Which code sgement shows the correct declaration of the Web Service Class?",
+        "pregunta" : "A developer needs to implement a custom SOAP Web Service that is used by an external Web Application. The developer chooses to include helper methods that are not used by the Web Application in the implementation of the Web Service Class<br><br>"+
+        "Which code segment shows the correct declaration of the Web Service Class?",
         "respuestasCorrectas": ["1"],
         "tipo": "Simple",
         "respuestas": [
@@ -528,7 +528,7 @@ let set2 = [
     },
     {
         "id": "20",
-        "pregunta" : "Universal Containers has implemented an orden managment application.Each Order can have one or more Order Line items. The Order Line object is related to the Order via a master-detail relationship. For each Order Line item, the total price is calculated by multipliying the Order Line item price with the quantity ordered.<br>"+
+        "pregunta" : "Universal Containers has implemented an orden managment application.Each Order can have one or more Order Line items. The Order Line object is related to the Order via a master-detail relationship. For each Order Line item, the total price is calculated by multipliying the Order Line item price with the quantity ordered.<br><br>"+
         "What is the best practice to get the sum of all Order Line item totals on the Order record",
         "respuestasCorrectas": ["1"],
         "tipo": "Simple",
@@ -553,7 +553,7 @@ let set2 = [
     },
     {
         "id": "21",
-        "pregunta" : "A team of developers is working on a source-driven project that allows them to work independetly, with many different org configurations.<br>"+
+        "pregunta" : "A team of developers is working on a source-driven project that allows them to work independently, with many different org configurations.<br>"+
         "Which type of Salesforce orgs should they use for their development?",
         "respuestasCorrectas": ["4"],
         "tipo": "Simple",
@@ -602,7 +602,7 @@ let set2 = [
     },
     {
         "id": "23",
-        "pregunta" : "Universal Containers hires a developer to build a custom search page to help users find the Accounts they want. Users will be able to search on Name, Description, and custom comments field.<br>"+
+        "pregunta" : "Universal Containers hires a developer to build a custom search page to help users find the Accounts they want. Users will be able to search on Name, Description, and custom comments field.<br><br>"+
         "Which considerations should the developer be aware of when deciding between SOQL and SOSL",
         "respuestasCorrectas": ["3","4"],
         "tipo": "Multiple",
@@ -627,7 +627,7 @@ let set2 = [
     },
     {
         "id": "24",
-        "pregunta" : "How sould a developer write unit test for private method in an Apex class?",
+        "pregunta" : "How should a developer write unit test for private method in an Apex class?",
         "respuestasCorrectas": ["3"],
         "tipo": "Simple",
         "respuestas": [
@@ -678,7 +678,7 @@ let set2 = [
         "pregunta" : "A developer must implement a CheckPaymentProcessor class that provides check processing payment capabilities that adhere to what is defined for payments in the PaymentProcessor interface.<br><br>"+
         "public interface PaymentProcessor{<br>"+
         " void pay(Decimal amount();<br>"+
-        "}<br>"+
+        "}<br><br>"+
         "Which implementation is correct to use the PaymentProcessor interface class?",
         "respuestasCorrectas": ["2"],
         "tipo": "Simple",
@@ -712,8 +712,8 @@ let set2 = [
     },
     {
         "id": "27",
-        "pregunta" : "A business has a priority Order Management Syste (OMS) that creates orders from their website and fulfills the ordes. When the order is created in the OMS, an integration also creates an order record in Salesforce and relates it to the contact as identified by the email on the order. As the order goes through different stages in the OMS, the integration also updates it in salesforce.<br>"+
-        "It is notices that each update from the OMS creates a new order record in Salesforce<br>"+
+        "pregunta" : "A business has a priority Order Management System (OMS) that creates orders from their website and fulfills the ordes. When the order is created in the OMS, an integration also creates an order record in Salesforce and relates it to the contact as identified by the email on the order. As the order goes through different stages in the OMS, the integration also updates it in salesforce.<br><br>"+
+        "It is noticed that each update from the OMS creates a new order record in Salesforce<br>"+
         "Which two actions will prevent the duplicate order records from being created in Salesforce?",
         "respuestasCorrectas": ["2","4"],
         "tipo": "Multiple",
@@ -738,7 +738,7 @@ let set2 = [
     },
     {
         "id": "28",
-        "pregunta" : "A developer wants to get access to the standard price book in the org while writing a test class that covers an OpportunityLineItem trigger<br>"+
+        "pregunta" : "A developer wants to get access to the standard price book in the org while writing a test class that covers an OpportunityLineItem trigger<br><br>"+
         "Which method allows access to the price book?",
         "respuestasCorrectas": ["1"],
         "tipo": "Simple",
@@ -763,7 +763,7 @@ let set2 = [
     },
     {
         "id": "29",
-        "pregunta" : "A developer has a Visualforce page and custom controller to save Account records. The developer wants to display any validation rule violations to the use.<br>"+
+        "pregunta" : "A developer has a Visualforce page and custom controller to save Account records. The developer wants to display any validation rule violations to the use.<br><br>"+
         "How can the developer make sure that validation rule violations are displayed?",
         "respuestasCorrectas": ["4"],
         "tipo": "Simple",
@@ -782,14 +782,14 @@ let set2 = [
             },
             {
                 "id" : "4",
-                "titulo" : "include <apex:message> on the Visualforce page"
+                "titulo" : "include <xmp><apex:message><xmp> on the Visualforce page"
             }
         ]
     },
     {
         "id": "30",
-        "pregunta" : "A developer is migrating a Visualforce page into a Lightning web component.<br>"+
-        "The Visualforce page shows informatiion about a single record, The developer decides to use Lightning Data Service to acess record data.<br>"+
+        "pregunta" : "A developer is migrating a Visualforce page into a Lightning web component.<br><br>"+
+        "The Visualforce page shows information about a single record, The developer decides to use Lightning Data Service to access record data.<br><br>"+
         "Which security consideration should the developer be aware of?",
         "respuestasCorrectas": ["1"],
         "tipo": "Simple",
@@ -814,7 +814,7 @@ let set2 = [
     },
     {
         "id": "31",
-        "pregunta" : "Since Aura application events follow the traditional publish-subscribe model, which is used to fire an event?",
+        "pregunta" : "Since Aura application events follow the traditional publish-subscribe model, which method is used to fire an event?",
         "respuestasCorrectas": ["4"],
         "tipo": "Simple",
         "respuestas": [
@@ -838,9 +838,9 @@ let set2 = [
     },
     {
         "id": "32",
-        "pregunta" : "A developer is debugging the following code to determine why Accounts are not being created<br>"+
-        "List<Account> accts = getAccounts() //getAcounnts implemented elsewhere<br>"+
-        "Database.insert(accts,false)<br>"+
+        "pregunta" : "A developer is debugging the following code to determine why Accounts are not being created<br><br>"+
+        "List<Account> accts = getAccounts(); //getAcounnts implemented elsewhere<br>"+
+        "Database.insert(accts,false)<br><br>"+
         "Which should the code be altered to help debug the issue?",
         "respuestasCorrectas": ["2"],
         "tipo": "Simple",
@@ -872,19 +872,19 @@ let set2 = [
         "respuestas": [
             {
                 "id" : "1",
-                "titulo" : "<lightning-input type='number' value='Salary__c' formatter='currency'></lightning-input>"
+                "titulo" : "<xmp><lightning-input type='number' value='Salary__c' formatter='currency'></lightning-input></xmp>"
             },
             {
                 "id" : "2",
-                "titulo" : "<lightning-input-currency value='Salary__c'></lightning-input-currency>"
+                "titulo" : "<xmp><lightning-input-currency value='Salary__c'></lightning-input-currency></xmp>"
             },
             {
                 "id" : "3",
-                "titulo" : "<lightning-formatted-number value='Salary__c' format-style='currency'></lightning-formatted-number>"
+                "titulo" : "<xmp><lightning-formatted-number value='Salary__c' format-style='currency'></lightning-formatted-number></xmp>"
             },
             {
                 "id" : "4",
-                "titulo" : "<lightning-input-field field-name='Salary__c' formatter='currency'></lightning-input-field>"
+                "titulo" : "<xmp><lightning-input-field field-name='Salary__c' formatter='currency'></lightning-input-field></xmp>"
             }
         ]
     },
@@ -951,7 +951,7 @@ let set2 = [
             },
             {
                 "id" : "2",
-                "titulo" : "Test.setCurrentPage(pageRef)"
+                "titulo" : "Test.setCurrentPage(pageRef);"
             },
             {
                 "id" : "3",
@@ -959,7 +959,7 @@ let set2 = [
             },
             {
                 "id" : "4",
-                "titulo" : "ApexPage.currentPage().getParameters().put('input', 'TestValue')"
+                "titulo" : "ApexPages.currentPage().getParameters().put('input', 'TestValue');"
             },
             {
                 "id" : "5",
@@ -969,7 +969,7 @@ let set2 = [
     },
     {
         "id": "37",
-        "pregunta" : "A developer created these three Rollup Summary fields in the custom object Project__c: (Total_Timesheets__c, Total_Approved_Timesheets__c, Total_Rejected_Timesheet__c)<br>"+
+        "pregunta" : "A developer created these three Rollup Summary fields in the custom object Project__c: *Total_Timesheets__c<br> *Total_Approved_Timesheets__c<br> *<br> Total_Rejected_Timesheet__c)<br><br>"+
         "The developer is asked to create a new field that shows the ratio between rejected and approved timesheets for a given project.<br>"+
         "Which should the developer use to implement the business requirement in order to minimize maintenance overhead?",
         "respuestasCorrectas": ["4"],
@@ -995,8 +995,8 @@ let set2 = [
     },
     {
         "id": "38",
-        "pregunta" : "Given the following Anonymous block:<br>"+
-        "List<Case< casesToUpdate = new List<Case>();<br>"+
+        "pregunta" : "Given the following Anonymous block:<br><br>"+
+        "List<Case> casesToUpdate = new List<Case>();<br>"+
         "for(Case thisCase:[SELECT Id, Status FROM LIMIT 50000]){<br>"+
         "  thisCase.Status = 'Working';<br>"+
         '  caseToUpdate.add(thisCase);<br>'+
@@ -1055,7 +1055,7 @@ let set2 = [
     },
     {
         "id": "40",
-        "pregunta" : "A Lightning component has a wired property, searchResults, that stores a list of Opportunities. <br> <br> Which definition of the Apex method, to which the searchResults property is wired, should be used?" ,
+        "pregunta" : "A Lightning component has a wired property, searchResults, that stores a list of Opportunities. <br><br> Which definition of the Apex method, to which the searchResults property is wired, should be used?" ,
         "respuestasCorrectas": ["1"],
         "tipo": "Simple",
         "respuestas": [

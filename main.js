@@ -83,6 +83,7 @@ function validateQuestion(respuestasCorrectas)
     if (sameMembers(respuestas,respuestasCorrectas) == true)
     {
         alert('Correcto');
+        this.getNext();
     }
     else
     {

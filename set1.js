@@ -1,7 +1,7 @@
 let set1 = [
     {
         "id": "1",
-        "pregunta" : "The Account object in an organization has a master-detail relationship to a child object called Branch. The following automations exist: <br> • Roll-up summary fields <br>• Custom validation rules <br>• Duplicate rules   <br> <br>A developer created a trigger on the Account object. <br> <br> Which two things should the developer consider while testing the trigger code? " ,
+        "pregunta" : "The Account object in an organization has a master-detail relationship to a child object called Branch. The following automations exist: <br> * Roll-up summary fields <br> *Custom validation rules <br>*Duplicate rules   <br> <br>A developer created a trigger on the Account object. <br> <br> Which two things should the developer consider while testing the trigger code? " ,
         "respuestasCorrectas": ["1","2"],
         "tipo": "Multiple",
         "respuestas": [

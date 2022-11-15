@@ -95,7 +95,10 @@ function validateQuestion(respuestasCorrectas)
         $("#toastText").text('Incorrecto!')
         myToast.show();
     }
-   
+
+    setTimeout(function(){
+        myToast.hide()
+    }, 1000);
 
 }
 

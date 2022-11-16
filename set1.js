@@ -268,7 +268,7 @@ let set1 = [
     {
         "id": "12",
         "pregunta" : "A business has a proprietary Order Management System (OMS) that creates orders from their website and fulfills the orders. When the order is created in the OMS, an integration also creates an order record in Salesforce and relates it to the contact as identified by the email on the order. As the order goes through different stages in the OMS, the integration also updates it in Salesforce. <br>  It is noticed that each update from the OMS creates a new order record in Salesforce. <br> <br> Which two actions will prevent the duplicate order records from being created in Salesforce?" ,
-        "respuestasCorrectas": ["1","3"],
+        "respuestasCorrectas": ["2","3"],
         "tipo": "Multiple",
         "respuestas": [
             {

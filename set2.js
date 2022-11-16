@@ -705,7 +705,7 @@ let set2 = [
             {
                 "id" : "4",
                 "titulo" : "public class CheckPaymentProcessor implements PaymentProcessor{<br>"+
-                " public void pay(Decimal ammount)<br>"+
+                " public void pay Decimal ammount;<br>"+
                 "}"
             }
         ]
@@ -884,7 +884,7 @@ let set2 = [
             },
             {
                 "id" : "4",
-                "titulo" : "<xmp><lightning-input-field field-name='Salary__c' formatter='currency'></lightning-input-field></xmp>"
+                "titulo" : "<xmp><lightning-input-field field-name='Salary__c'></lightning-input-field></xmp>"
             }
         ]
     },
@@ -969,7 +969,7 @@ let set2 = [
     },
     {
         "id": "37",
-        "pregunta" : "A developer created these three Rollup Summary fields in the custom object Project__c: *Total_Timesheets__c<br> *Total_Approved_Timesheets__c<br> *<br> Total_Rejected_Timesheet__c)<br><br>"+
+        "pregunta" : "A developer created these three Rollup Summary fields in the custom object Project__c:<br>  *Total_Timesheets__c<br> *Total_Approved_Timesheets__c<br> *Total_Rejected_Timesheet__c)<br><br>"+
         "The developer is asked to create a new field that shows the ratio between rejected and approved timesheets for a given project.<br>"+
         "Which should the developer use to implement the business requirement in order to minimize maintenance overhead?",
         "respuestasCorrectas": ["4"],
@@ -1181,7 +1181,7 @@ let set2 = [
     {
         "id": "45",
         "pregunta" : "A developer migrated functionality from JavaScript Remoting to a Lightning web component and wants to use the existing getOpportunities() method to provide data. <br> <br> Which modification to the method is necessary?" ,
-        "respuestasCorrectas": ["1"],
+        "respuestasCorrectas": ["2"],
         "tipo": "Simple",
         "respuestas": [
             {
@@ -1252,7 +1252,7 @@ let set2 = [
     },
     {
         "id": "48",
-        "pregunta" : "What are three capabilities of the <ltng:require> tag when loading JavaScript resources ir Aura components?" ,
+        "pregunta" : "What are three capabilities of the <xmp><ltng:require><xmp> tag when loading JavaScript resources ir Aura components?" ,
         "respuestasCorrectas": ["1","2","4"],
         "tipo": "Multiple",
         "respuestas": [
@@ -1274,7 +1274,7 @@ let set2 = [
             }
             ,
             {
-                "id" : "4",
+                "id" : "5",
                 "titulo" : "Loading externally hosted scripts"
             }
         ]

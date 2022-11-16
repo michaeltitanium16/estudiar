@@ -1,7 +1,7 @@
 let set3 = [
     {
         "id": "1",
-        "pregunta" : "public virtual class Payment { <br>public virtual void make Payment (Decimal amount) { /*implementation*/ }<br> } <br><br> Which is the correct implementation?" ,
+        "pregunta" : "A developer must create a CreditCardPayment class that provides an implementation of an existing Payment class <br> <br> public virtual class Payment { <br>public virtual void makePayment (Decimal amount) { /*implementation*/ }<br> } <br><br> Which is the correct implementation?" ,
         "respuestasCorrectas": ["3"],
         "tipo": "Simple",
         "respuestas": [
@@ -83,11 +83,11 @@ let set3 = [
             },
             {
                 "id" : "2",
-                "titulo" : "@InvocableMethod(label='Additional Info')<br>public static List<ContactInfo> getinfo (List<Id> contactIds) <br>{/*implementation */}",
+                "titulo" : "@InvocableMethod(label='Additional Info')<br>public static List<xmp><ContactInfo></xmp> getinfo (List<xmp><Id></xmp> contactIds) <br>{/*implementation */}",
             },
             {
                 "id" : "3",
-                "titulo" : "@InvocableMethod(label='Additional Info')<br>public List<ContactInfo> getinfo (List<Id> contactIds) <br>{/*implementation */}"
+                "titulo" : "@InvocableMethod(label='Additional Info')<br>public List<xmp><ContactInfo></xmp> getinfo (List<xmp><Id></xmp> contactIds) <br>{/*implementation */}"
             },
             {
                 "id" : "4",
@@ -553,7 +553,7 @@ let set3 = [
     },
     {
         "id": "24",
-        "pregunta" : "What are three capabilities of the <ltng require> tag when loading JavaScript resources in Aura components?" ,
+        "pregunta" : "What are three capabilities of the <xmp><ltng:require></xmp> tag when loading JavaScript resources in Aura components?" ,
         "respuestasCorrectas": ["3","4","5"],
         "tipo": "Multiple",
         "respuestas": [
@@ -702,8 +702,8 @@ let set3 = [
     },
     {
         "id": "30",
-        "pregunta" : "Given the following Anonymous block:  <br> <br> List<Case> casesToUpdate = new List<Case>();<br>for(Case thisCase : [SELECT Id, Statud FOM Case LIMIT 50000]){<br>thisCase.Status = 'Working';<br>casesToUpdate.add(thisCase);<br>}<br>try{<br>Database.update(casesToUpdate,false);<br>}catch(Exception e){<br>System.debug(e.getMessage());<br>} <br> <br> What should a developer consider for an environment that has over 10,000 Case records? " ,
-        "respuestasCorrectas": ["4"],
+        "pregunta" : "Given the following Anonymous block:  <br> <br> List <xmp><Case></xmp> casesToUpdate = new List <xmp><Case></xmp>();<br>for(Case thisCase : [SELECT Id, Statud FOM Case LIMIT 50000]){<br>thisCase.Status = 'Working';<br>casesToUpdate.add(thisCase);<br>}<br>try{<br>Database.update(casesToUpdate,false);<br>}catch(Exception e){<br>System.debug(e.getMessage());<br>} <br> <br> What should a developer consider for an environment that has over 10,000 Case records? " ,
+        "respuestasCorrectas": ["2"],
         "tipo": "Simple",
         "respuestas": [
             {
@@ -894,7 +894,7 @@ let set3 = [
     },
     {
         "id": "38",
-        "pregunta" : "Considering the following code snippet:  <br> <br>  public static void insertAccount(List<Account> theseAccounts){<br>for(Account thisAccount : theseAccounts){<br>if(thisAccount.website == null){<br>thisAccount.website = 'https://www.deno.com';<br>}<br>}<br>update theseAccounts; <br>} <br<br> When the code executes, a DML exception is thrown. <br> <br> How should the developer modify the code to ensure exceptions are handled gracefully?" ,
+        "pregunta" : "Considering the following code snippet:  <br> <br>  public static void insertAccount(List<xmp><Account></xmp> theseAccounts){<br>for(Account thisAccount : theseAccounts){<br>if(thisAccount.website == null){<br>thisAccount.website = 'https://www.deno.com';<br>}<br>}<br>update theseAccounts; <br>} <br<br> When the code executes, a DML exception is thrown. <br> <br> How should the developer modify the code to ensure exceptions are handled gracefully?" ,
         "respuestasCorrectas": ["1"],
         "tipo": "Simple",
         "respuestas": [

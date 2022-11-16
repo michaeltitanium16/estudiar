@@ -26,7 +26,7 @@ let set1 = [
     },
     {
         "id": "2",
-        "pregunta" : "What should a developer use to obtain the Id and Name of all the Leads, Accounts, and Contacts that have the company name '\"Universal Containers'\' ?" ,
+        "pregunta" : "What should a developer use to obtain the Id and Name of all the Leads, Accounts, and Contacts that have the company name\"Universal Containers\" ?" ,
         "respuestasCorrectas": ["3"],
         "tipo": "Simple",
         "respuestas": [
@@ -51,17 +51,17 @@ let set1 = [
     },
     {
         "id": "3",
-        "pregunta" : "A PrimaryId__c custom field exists on the Candidate__c custom object. The field is used to store each candidate's id number and is marked as Unique in the schema definition. <br> As part of a data enrichment process, Universal Containers has a CSV file that contains updated data for all candidates in the system. The file contains each Candidate's primary id as a data point. Universal Containers wants to upload this information into Salesforce, while ensuring all data rows are correctly mapped to a candidate in the system. <br> Which technique should the developer implement to streamline the data upload?" ,
+        "pregunta" : "A PrimaryId__c custom field exists on the Candidate__c custom object. The field is used to store each candidate's id number and is marked as Unique in the schema definition. <br> As part of a data enrichment process, Universal Containers has a CSV file that contains updated data for all candidates in the system. The file contains each Candidate's primary id as a data point. Universal Containers wants to upload this information into Salesforce, while ensuring all data rows are correctly mapped to a candidate in the system. <br><br> Which technique should the developer implement to streamline the data upload?" ,
         "respuestasCorrectas": ["2"],
         "tipo": "Simple",
         "respuestas": [
             {
                 "id" : "1",
-                "titulo" : "Upload the CSV into a custom object related to candidate",
+                "titulo" : "Upload the CSV into a custom object related to Candidate__c",
             },
             {
                 "id" : "2",
-                "titulo" : "Update the primaryId__c field definition to mark it as an External Id.",
+                "titulo" : "Update the PrimaryId__c field definition to mark it as an External Id.",
             },
             {
                 "id" : "3",
@@ -75,7 +75,7 @@ let set1 = [
     },
     {
         "id": "4",
-        "pregunta" : "Cloud Kicks has a multi-screen flow that its call center agents use when handling Inbound service desk calls. <br> At one of the steps in the flow, the agents should be presented with a list of order numbers and dates that are retrieved from an external order management system in real time and displayed on the screen. <br> What should a developer use to satisfy this requirement? " ,
+        "pregunta" : "Cloud Kicks has a multi-screen flow that its call center agents use when handling Inbound service desk calls. <br> <br> At one of the steps in the flow, the agents should be presented with a list of order numbers and dates that are retrieved from an external order management system in real time and displayed on the screen. <br> <br> What should a developer use to satisfy this requirement? " ,
         "respuestasCorrectas": ["2"],
         "tipo": "Simple",
         "respuestas": [
@@ -99,25 +99,25 @@ let set1 = [
     },
     {
         "id": "5",
-        "pregunta" : "A Next Best Action strategy uses an Enhance element that invokes an Apex method to determine a discount level for a Contact, based on a number of factors. <br> What is the correct definition of the Apex method? " ,
+        "pregunta" : "A Next Best Action strategy uses an Enhance element that invokes an Apex method to determine a discount level for a Contact, based on a number of factors. <br><br>  What is the correct definition of the Apex method? " ,
         "respuestasCorrectas": ["3"],
         "tipo": "Simple",
         "respuestas": [
             {
                 "id" : "1",
-                "titulo" : "@InvocableMethod <br>global Recommendation getLevel (contactWrapper input)<br> { /* implementation*/ }",
+                "titulo" : "@InvocableMethod <br>global Recommendation getLevel (ContactWrapper input)<br> { /* implementation*/ }",
             },
             {
                 "id" : "2",
-                "titulo" : "@InvocableMethod <br>global static ListRecommendation getLevel (List<contactWrapper> input)<br> { /*implementation*/ }",
+                "titulo" : "@InvocableMethod <br>global static ListRecommendation getLevel (List<xmp><ContactWrapper></xmp> input)<br> { /*implementation*/ }",
             },
             {
                 "id" : "3",
-                "titulo" : "InvocableMethod <br> global static List<List<Recommendation>> getLevel (List<contactWrapper> input)<br> { /* implementation*/ } "
+                "titulo" : "@InvocableMethod <br> global static List<List<Recommendation>> getLevel (List<xmp><ContactWrapper> </xmp>input)<br> { /* implementation*/ } "
             },
             {
                 "id" : "4",
-                "titulo" : "InvocableMethod <br>global List<List<Recommendation>> getLevel (List<contactWrapper> input) <br>{ /*implementation / } "
+                "titulo" : "@InvocableMethod <br>global List<List<Recommendation>> getLevel (List<xmp><ContactWrapper></xmp> input) <br>{ /*implementation / } "
             }
         ]
     },
@@ -219,7 +219,7 @@ let set1 = [
     },
     {
         "id": "10",
-        "pregunta" : " The following code snippet is executed by a Lightning web component in an environment with more than 2,000 lead records: <br> @AuraEnabled <br> public void static updateLeads () { <br> for (Lead thislead [SELECT Origin__c FROM Lead] ) { <br> thisLead. LeadSource = thisLead.origin; <br> update thisLead; <br> } <br> } <br> Which governor limit will likely be exceeded within the Apex transaction?" ,
+        "pregunta" : " The following code snippet is executed by a Lightning web component in an environment with more than 2,000 lead records: <br> @AuraEnabled <br> public void static updateLeads () { <br> for (Lead thislead :[SELECT Origin__c FROM Lead] ) { <br> thisLead. LeadSource = thisLead.origin; <br> update thisLead; <br> } <br> } <br> Which governor limit will likely be exceeded within the Apex transaction?" ,
         "respuestasCorrectas": ["1"],
         "tipo": "Simple",
         "respuestas": [
@@ -249,25 +249,25 @@ let set1 = [
         "respuestas": [
             {         
                 "id" : "1",
-                "titulo" : "<xmp><aura:component access='\"GLOBAL'\" extends='\"ltng:outApp'\"> </xmp>  <xmp> <aura:dependency resource='\"c:accountList'\"/></xmp>  <xmp> </aura:component></xmp>",
+                "titulo" : "<xmp><aura:component access=\"GLOBAL\" extends=\"ltng:outApp\"> </xmp>  <xmp> <aura:dependency resource=\"c:accountList\"/></xmp>  <xmp> </aura:component></xmp>",
             },
             {
                 "id" : "2",
-                "titulo" : "<xmp><aura: application access='\"GLOBAL'\" extends='\"ltng:outApp'\"> </xmp> <xmp> <aura: dependency resource='\"c:accountList'\"/> </xmp> <xmp> </aura: application> </xmp>",
+                "titulo" : "<xmp><aura: application access=\"GLOBAL\" extends=\"ltng:outApp\"> </xmp> <xmp> <aura: dependency resource=\"c:accountList\"/> </xmp> <xmp> </aura: application> </xmp>",
             },
             {
                 "id" : "3",
-                "titulo" : "<xmp><aura: application access='\"GLOBAL'\"> </xmp> <xmp> <aura:dependency resource='\"c:accountList'\"/> </xmp> <xmp> </aura: application></xmp>",
+                "titulo" : "<xmp><aura: application access=\"GLOBAL\"> </xmp> <xmp> <aura:dependency resource=\"c:accountList\"/> </xmp> <xmp> </aura: application></xmp>",
             },
             {
                 "id" : "4",
-                "titulo" : "<xmp> <aura: component access='\"GLOBAL'\"> </xmp><xmp>  <aura:dependency resource='\"c:accountList'\"/> </xmp> <xmp> </aura:component> </xmp>",
+                "titulo" : "<xmp> <aura: component access=\"GLOBAL\"> </xmp><xmp>  <aura:dependency resource=\"c:accountList\"/> </xmp> <xmp> </aura:component> </xmp>",
             }        
         ]
     },
     {
         "id": "12",
-        "pregunta" : "A business has a proprietary Order Management System (OMS) that creates orders from their website and fulfills the orders. When the order is created in the OMS, an integration also creates an order record in Salesforce and relates it to the contact as identified by the email on the order. As the order goes through different stages in the OMS, the integration also updates it in Salesforce. <br>  It is noticed that each update from the OMS creates a new order record in Salesforce. <br>  Which two actions will prevent the duplicate order records from being created in Salesforce?" ,
+        "pregunta" : "A business has a proprietary Order Management System (OMS) that creates orders from their website and fulfills the orders. When the order is created in the OMS, an integration also creates an order record in Salesforce and relates it to the contact as identified by the email on the order. As the order goes through different stages in the OMS, the integration also updates it in Salesforce. <br>  It is noticed that each update from the OMS creates a new order record in Salesforce. <br> <br> Which two actions will prevent the duplicate order records from being created in Salesforce?" ,
         "respuestasCorrectas": ["1","3"],
         "tipo": "Multiple",
         "respuestas": [
@@ -391,7 +391,7 @@ let set1 = [
     },
     {
         "id": "17",
-        "pregunta" : "Consider the following code snippet: <br> public static List<Lead> obtainAllFields (Set<Id> leadIds) { <br> List<Lead> result = new List<Lead> ; for (Id leadId : leadIds) { <br> result.add([SELECT FIELDS (ALL) FROM Lead WHERE Id = :leadId); <br> return result;  }" ,
+        "pregunta" : "Consider the following code snippet: <br> public static <xmp>List<Lead></xmp> obtainAllFields (Set<xmp><Id></xmp> leadIds) { <br> List<xmp><Lead></xmp> result = new List<xmp><Lead></xmp>() ; for (Id leadId : leadIds) { <br> result.add([SELECT FIELDS (ALL) FROM Lead WHERE Id = :leadId); <br> return result;  }" ,
         "respuestasCorrectas": ["4"],
         "tipo": "Simple",
         "respuestas": [
@@ -706,7 +706,7 @@ let set1 = [
             },
             {
                 "id" : "4",
-                "titulo" : "A custom exception class name must end with '\"Exception'\"."
+                "titulo" : "A custom exception class name must end with \"Exception\"."
             }
             ,
             {
@@ -957,7 +957,7 @@ let set1 = [
     },
     {
         "id": "40",
-        "pregunta" : "A developer considers the following snippet of code:   <br> <br> Boolean isOK; <br>integer x; <br> String thestring = 'Hello'; <br>  if (isOK == false && thestring == 'Hello'){ <br> x = 1; <br> }else if(isOK == true && thestring == 'Hello'){<br>x = 2;<br> } else if(isOK != null && thestring == 'Hello'){<br> x = 3; <br> } else{<br> x = 4;<br> }" ,
+        "pregunta" : "A developer considers the following snippet of code:   <br> <br> Boolean isOK; <br>integer x; <br> String thestring = 'Hello'; <br>  if (isOK == false && thestring == 'Hello'){ <br> x = 1; <br> }else if(isOK == true && thestring == 'Hello'){<br>x = 2;<br> } else if(isOK != null && thestring == 'Hello'){<br> x = 3; <br> } else{<br> x = 4;<br> } <br> <br> Based on this code, what is the value of x ?" ,
         "respuestasCorrectas": ["4"],
         "tipo": "Multiple",
         "respuestas": [
@@ -983,7 +983,7 @@ let set1 = [
         "id": "41",
         "pregunta" : "A developer has an integer variable called maxAttempts. The developer needs to ensure that once maxAttempts is Initialized, it preserves its value for the length of the Apex transaction; while being able to share the variable's state between trigger executions. <br> <br> How should the developer declare maxAttempts to meet these requirements? " ,
         "respuestasCorrectas": ["3"],
-        "tipo": "Multiple/Simple",
+        "tipo": "Simple",
         "respuestas": [
             {
                 "id" : "1",
@@ -1293,7 +1293,7 @@ let set1 = [
     },  
     {
         "id": "54",
-        "pregunta" : "Cloud Kicks Fitness, an ISV Salesforce partner, is developing a managed package application. One of the application modules allows the user to calculate body fat using the Apex class, BodyFat, and its method, calculateBodyFatt). The product owner wants to ensure this method is accessible by the consumer of the application when developing customizations outside the ISV's package namespace.  <br> br> Which approach should a developer take to ensure calculateBodyFato is accessible outside the package namespace? " ,
+        "pregunta" : "Cloud Kicks Fitness, an ISV Salesforce partner, is developing a managed package application. One of the application modules allows the user to calculate body fat using the Apex class, BodyFat, and its method, calculateBodyFatt. The product owner wants to ensure this method is accessible by the consumer of the application when developing customizations outside the ISV's package namespace.  <br> <br> Which approach should a developer take to ensure calculateBodyFato is accessible outside the package namespace? " ,
         "respuestasCorrectas": ["3"],
         "tipo": "Simple",
         "respuestas": [

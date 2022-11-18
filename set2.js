@@ -1252,7 +1252,7 @@ let set2 = [
     },
     {
         "id": "48",
-        "pregunta" : "What are three capabilities of the <xmp><ltng:require><xmp> tag when loading JavaScript resources ir Aura components?" ,
+        "pregunta" : "What are three capabilities of the <xmp><ltng:require></xmp> tag when loading JavaScript resources ir Aura components?" ,
         "respuestasCorrectas": ["1","2","4"],
         "tipo": "Multiple",
         "respuestas": [

@@ -39,7 +39,7 @@ function getExam(set)
             break;
     }
 
-    //data = reOrdenar(data);
+    data = reOrdenar(data);
     getQuestion(contador);
     timer(3600);
 }
@@ -136,6 +136,7 @@ function makeQuestion(question)
         bloque+= '<br><br>';
         bloque+= '<ul class="list-group mb-4">';
         
+        question.respuestas = reOrdenar(question.respuestas);
         question.respuestas.forEach(function(value)
         {
             bloque+= '<li class="list-group-item" onclick="setvalue('+value.id+')">';

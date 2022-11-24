@@ -1366,7 +1366,7 @@ let set1 = [
     {
         "id": "57",
         "pregunta" : " A developer has a requirement to write Apex code to update a large number of account records on a nightly basis. The system administrator needs to be able to schedule the class to run after business hours on an as-needed basis. <br> <br> Which class definition should be used to successfully implement this requirement?" ,
-        "respuestasCorrectas": ["3"],
+        "respuestasCorrectas": ["4"],
         "tipo": "Simple",
         "respuestas": [
             {

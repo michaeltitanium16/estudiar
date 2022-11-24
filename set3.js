@@ -1092,7 +1092,7 @@ let set3 = [
     {
         "id": "46",
         "pregunta" : " Managers at Universal Containers want to ensure that only decommissioned containers are able to be deleted in the system. To meet the business requirement a Salesforce developer adds \"Decommissioned\" as a picklist value for the Status__c custom field within the Container__c object.  <br> <br> Which tool should the developer use to enforce only Container records with a status of \"Decommissioned\" can be deleted?" ,
-        "respuestasCorrectas": ["3"],
+        "respuestasCorrectas": ["1"],
         "tipo": "Simple",
         "respuestas": [
             {

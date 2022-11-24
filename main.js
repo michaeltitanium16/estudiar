@@ -27,6 +27,9 @@ function getExam(set)
         case "3": data = set3;
             
              break;
+        case "4": data = michaelset;
+    
+        break;
 
         case "random":{
 
@@ -39,7 +42,7 @@ function getExam(set)
             break;
     }
 
-    data = reOrdenar(data);
+    //data = reOrdenar(data);
     getQuestion(contador);
     timer(3600);
 }
@@ -71,10 +74,15 @@ function getBack()
     getQuestion(contador);
 }
 
-function comprobar()
+function comprobar(valSDue)
 {
-    question = data[contador];
-    validateQuestion(question.respuestasCorrectas);
+    let arraynuevo = data.filter((value) => {
+
+        return value.id == valSDue;
+
+      });
+
+   validateQuestion(arraynuevo[0].respuestasCorrectas);
 }
 
 function validateQuestion(respuestasCorrectas)
@@ -136,7 +144,7 @@ function makeQuestion(question)
         bloque+= '<br><br>';
         bloque+= '<ul class="list-group mb-4">';
         
-        question.respuestas = reOrdenar(question.respuestas);
+       // question.respuestas = reOrdenar(question.respuestas);
         question.respuestas.forEach(function(value)
         {
             bloque+= '<li class="list-group-item" onclick="setvalue('+value.id+')">';
@@ -147,7 +155,7 @@ function makeQuestion(question)
         bloque+= '</ul>';
         bloque+='<div class="d-grid gap-2 d-sm-flex justify-content-sm-center">';
         bloque+='<button  class="btn btn-warning btn-lg px-4 gap-3" onclick="getBack()">Anterior</button>';
-        bloque+='<button  class="btn btn-success btn-lg px-4 gap-3" onclick="comprobar()">Comprobar</button>';
+        bloque+='<button  class="btn btn-success btn-lg px-4 gap-3" onclick="comprobar('+question.id+')">Comprobar</button>';
         bloque+='<button  class="btn btn-primary btn-lg px-4 gap-3" onclick="getNext()">Siguiente</button>';
         bloque+='</div>';
         bloque += '</div>'

@@ -1229,7 +1229,7 @@ let set2 = [
     {
         "id": "47",
         "pregunta" : "A developer writes a trigger on the Account object on the before update event that increments a count field. A workflow rule alsdo increments the count field every time that an Account is created or updated. The field update in the workflow rule is configured to not re-evaluate workflow rule. <br> <br> What is the value of the count field if an Account is inserted with an initial value of zero, assuming no other automation logic is implemented on the Account?" ,
-        "respuestasCorrectas": ["3"],
+        "respuestasCorrectas": ["2"],
         "tipo": "Multiple/Simple",
         "respuestas": [
             {

@@ -1116,7 +1116,7 @@ let set3 = [
     {
         "id": "47",
         "pregunta" : "Universal Containers has created a unique process for tracking container repairs. A custom field, Status__c, has been created within the Container__c custom object. A developer is tasked with sending notifications to multiple external systems every time the value of the Status__c picklist changes. <br> <br> Which two tools should the developer use to meet the business requirement and ensure low maintenance of the solution? " ,
-        "respuestasCorrectas": ["1","3"],
+        "respuestasCorrectas": ["3","4"],
         "tipo": "Multiple",
         "respuestas": [
             {

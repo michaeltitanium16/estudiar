@@ -373,7 +373,7 @@ let set1 = [
         "respuestas": [
             {
                 "id" : "1",
-                "titulo" : "VsCode",
+                "titulo" : "Ant Migration Tool",
             },
             {
                 "id" : "2",
@@ -1293,7 +1293,7 @@ let set1 = [
     },  
     {
         "id": "54",
-        "pregunta" : "Cloud Kicks Fitness, an ISV Salesforce partner, is developing a managed package application. One of the application modules allows the user to calculate body fat using the Apex class, BodyFat, and its method, calculateBodyFatt. The product owner wants to ensure this method is accessible by the consumer of the application when developing customizations outside the ISV's package namespace.  <br> <br> Which approach should a developer take to ensure calculateBodyFato is accessible outside the package namespace? " ,
+        "pregunta" : "Cloud Kicks Fitness, an ISV Salesforce partner, is developing a managed package application. One of the application modules allows the user to calculate body fat using the Apex class, BodyFat, and its method, calculateBodyFatt. The product owner wants to ensure this method is accessible by the consumer of the application when developing customizations outside the ISV's package namespace.  <br> <br> Which approach should a developer take to ensure calculateBodyFat() is accessible outside the package namespace? " ,
         "respuestasCorrectas": ["3"],
         "tipo": "Simple",
         "respuestas": [
@@ -1317,7 +1317,7 @@ let set1 = [
     },  
     {
         "id": "55",
-        "pregunta" : " When using SalesforceDx, what does a developer need to enable to create and manage scratch orgs? " ,
+        "pregunta" : " When using SalesforceDX, what does a developer need to enable to create and manage scratch orgs? " ,
         "respuestasCorrectas": ["2"],
         "tipo": "Simple",
         "respuestas": [

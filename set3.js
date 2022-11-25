@@ -752,7 +752,7 @@ let set3 = [
         "id": "32",
         "pregunta" : "What are two characteristics related to formulas? " ,
         "respuestasCorrectas": ["2","4"],
-        "tipo": "Multiple/Simple",
+        "tipo": "Multiple",
         "respuestas": [
             {
                 "id" : "1",
@@ -775,8 +775,8 @@ let set3 = [
     {
         "id": "33",
         "pregunta" : "A developer has an Apex controller for a Visualforce page that takes an ID as a URL parameter. <br> <br> How should the developer prevent a cross site scripting vulnerability? " ,
-        "respuestasCorrectas": ["4"],
-        "tipo": "Multiple/Simple",
+        "respuestasCorrectas": ["3"],
+        "tipo": "Simple",
         "respuestas": [
             {
                 "id" : "1",
@@ -788,7 +788,7 @@ let set3 = [
             },
             {
                 "id" : "3",
-                "titulo" : "ApexPages.currentPage().getParameters().get('url_param').excapeHtml4()",
+                "titulo" : "ApexPages.currentPage().getParameters().get('url_param').escapeHtml4()",
             },
             {
                 "id" : "4",

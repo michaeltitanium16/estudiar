@@ -293,7 +293,7 @@ let michaelset = [
         "id": "271",
         "pregunta" : "What are three ways for a developer to execute tests in an org?" ,
         "respuestasCorrectas": ["2","3","4"],
-        "tipo": "Multiple/Simple",
+        "tipo": "Multiple",
         "respuestas": [
             {
                 "id" : "1",
@@ -673,7 +673,7 @@ let michaelset = [
             },
             {
                 "id" : "4",
-                "titulo" : "Replace the retrievedRecords variable declaration from ftount to a single Account."
+                "titulo" : "Replace the retrievedRecords variable declaration from a List of Account to a single Account."
             }
         ]
     },
@@ -973,7 +973,7 @@ let michaelset = [
     {
         "id": "220",
         "pregunta" : "Which two characteristics are true for Aura component events?" ,
-        "respuestasCorrectas": ["2","4"],
+        "respuestasCorrectas": ["1","4"],
         "tipo": "Multiple",
         "respuestas": [
             {
@@ -1188,6 +1188,304 @@ let michaelset = [
             {
                 "id" : "4",
                 "titulo" : "Mark fields as read-only on the page layout."
+            }
+        ]
+    },
+    {
+        "id": "199",
+        "pregunta" : "Which two conditions cause workflow rules to fire?" ,
+        "respuestasCorrectas": ["2","4"],
+        "tipo": "Multiple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "Changing the territory assignments of accounts and opportunities",
+            },
+            {
+                "id" : "2",
+                "titulo" : "Updating records using the bulk API",
+            },
+            {
+                "id" : "3",
+                "titulo" : "Converting leads to person accounts"
+            },
+            {
+                "id" : "4",
+                "titulo" : "An Apex Batch process that changes field values"
+            }
+        ]
+    },
+    {
+        "id": "192",
+        "pregunta" : "Which three web technologies can be integrated into a Visualforce page? (" ,
+        "respuestasCorrectas": ["1","2","5"],
+        "tipo": "Multiple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "JavaScript",
+            },
+            {
+                "id" : "2",
+                "titulo" : "CSS",
+            },
+            {
+                "id" : "3",
+                "titulo" : "Java"
+            },
+            {
+                "id" : "4",
+                "titulo" : "PHP"
+            }
+            ,
+            {
+                "id" : "5",
+                "titulo" : "HTML"
+            }
+        ]
+    },
+    {
+        "id": "191",
+        "pregunta" : "Universal Containers stores Orders and Line Items in Salesforce. For security reason, financial representatives are allowed to see information on the Order such as order amount, but they are not allowed to see the Line items on the Order.<br> <br>  Which type of relationship should be used?" ,
+        "respuestasCorrectas": ["1"],
+        "tipo": "Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "Lookup",
+            },
+            {
+                "id" : "2",
+                "titulo" : "Direct Lookup",
+            },
+            {
+                "id" : "3",
+                "titulo" : "Indirect lookup"
+            },
+            {
+                "id" : "4",
+                "titulo" : "Master Detail"
+            }
+        ]
+    },
+    {
+        "id": "190",
+        "pregunta" : "Which three operations affect the number of times a trigger can fire" ,
+        "respuestasCorrectas": ["1","2","5"],
+        "tipo": "Multiple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "Process Flows",
+            },
+            {
+                "id" : "2",
+                "titulo" : "Workflow Rules",
+            },
+            {
+                "id" : "3",
+                "titulo" : "Criteria-based Sharing calculations"
+            },
+            {
+                "id" : "4",
+                "titulo" : "Email messages"
+            }
+            ,
+            {
+                "id" : "5",
+                "titulo" : "Roll-Up Summary fields"
+            }
+        ]
+    },
+    {
+        "id": "186",
+        "pregunta" : "Assuming that 'name; is a String obtained by an <apex:inputText> tag on a Visualforce page. <br> <br> Which two SOQL queries performed are safe from SOQL injections?" ,
+        "respuestasCorrectas": ["2","4"],
+        "tipo": "Multiple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "<xmp>String query = 'SELECT Id FROM Account WHERE Name LIKE \''%' + String.escapeSingleQuotes(name) + '%\''; List<Account> results = Database.query(query);</xmp>",
+            },
+            {
+                "id" : "2",
+                "titulo" : "<xmp>String query = 'SELECT Id FROM Account WHERE Name LIKE \''%' + String.escapeSingleQuotes(name) + '%\''; List<Account> results = Database.query(query);</xmp>",
+            },
+            {
+                "id" : "3",
+                "titulo" : "<xmp>String query = 'SELECT Id FROM Account WHERE Name LIKE \''%' + name + '%\''; List<Account> results = Database.query(query);</xmp>"
+            },
+            {
+                "id" : "4",
+                "titulo" : "<xmp>String query = '%' + name + '%'; List<Account> results = [SELECT Id FROM Account WHERE Name LIKE :query];</xmp>"
+            }
+        ]
+    },
+    {
+        "id": "184",
+        "pregunta" : "A developer creates a new Apex trigger with a helper class, and writes a test class that only exercises 95% coverage of new Apex helper class. Change Set deployment to production fails with the test coverage warning \"Test coverage of selected Apex Trigger is 0%, at least 1% test coverage is required\"<br> <br> Whatshould the developer do to successfully deploy the new Apex trigger and helper class?" ,
+        "respuestasCorrectas": ["1"],
+        "tipo": "Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "Create a test class and methods to cover the Apex trigger",
+            },
+            {
+                "id" : "2",
+                "titulo" : "Run the tests using the 'Run All Tests' method.",
+            },
+            {
+                "id" : "3",
+                "titulo" : "Remove the falling test methods from the test class."
+            },
+            {
+                "id" : "4",
+                "titulo" : "Increase the test class coverage on the helper class"
+            }
+        ]
+    },
+    {
+        "id": "",
+        "pregunta" : "" ,
+        "respuestasCorrectas": [""],
+        "tipo": "Multiple/Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "",
+            },
+            {
+                "id" : "2",
+                "titulo" : "",
+            },
+            {
+                "id" : "3",
+                "titulo" : ""
+            },
+            {
+                "id" : "4",
+                "titulo" : ""
+            }
+        ]
+    },
+    {
+        "id": "",
+        "pregunta" : "" ,
+        "respuestasCorrectas": [""],
+        "tipo": "Multiple/Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "",
+            },
+            {
+                "id" : "2",
+                "titulo" : "",
+            },
+            {
+                "id" : "3",
+                "titulo" : ""
+            },
+            {
+                "id" : "4",
+                "titulo" : ""
+            }
+        ]
+    },
+    {
+        "id": "",
+        "pregunta" : "" ,
+        "respuestasCorrectas": [""],
+        "tipo": "Multiple/Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "",
+            },
+            {
+                "id" : "2",
+                "titulo" : "",
+            },
+            {
+                "id" : "3",
+                "titulo" : ""
+            },
+            {
+                "id" : "4",
+                "titulo" : ""
+            }
+        ]
+    },
+    {
+        "id": "",
+        "pregunta" : "" ,
+        "respuestasCorrectas": [""],
+        "tipo": "Multiple/Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "",
+            },
+            {
+                "id" : "2",
+                "titulo" : "",
+            },
+            {
+                "id" : "3",
+                "titulo" : ""
+            },
+            {
+                "id" : "4",
+                "titulo" : ""
+            }
+        ]
+    },
+    {
+        "id": "",
+        "pregunta" : "" ,
+        "respuestasCorrectas": [""],
+        "tipo": "Multiple/Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "",
+            },
+            {
+                "id" : "2",
+                "titulo" : "",
+            },
+            {
+                "id" : "3",
+                "titulo" : ""
+            },
+            {
+                "id" : "4",
+                "titulo" : ""
+            }
+        ]
+    },
+    {
+        "id": "",
+        "pregunta" : "" ,
+        "respuestasCorrectas": [""],
+        "tipo": "Multiple/Simple",
+        "respuestas": [
+            {
+                "id" : "1",
+                "titulo" : "",
+            },
+            {
+                "id" : "2",
+                "titulo" : "",
+            },
+            {
+                "id" : "3",
+                "titulo" : ""
+            },
+            {
+                "id" : "4",
+                "titulo" : ""
             }
         ]
     }

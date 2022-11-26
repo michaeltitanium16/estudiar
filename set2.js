@@ -1157,7 +1157,7 @@ let set2 = [
     {
         "id": "44",
         "pregunta" : "A developer created a custom order management app that uses an Apex class. The order is represented by an Order object and an OrderItem object that has a master-detail relationship to Order. During order processing, an order may be split into multiple orders. <br> <br> What should a developer do to allow their code to move some existing OrderItem records to a new Order record?" ,
-        "respuestasCorrectas": ["3"],
+        "respuestasCorrectas": ["2"],
         "tipo": "Simple",
         "respuestas": [
             {

@@ -1346,146 +1346,156 @@ let michaelset = [
         ]
     },
     {
-        "id": "",
-        "pregunta" : "" ,
-        "respuestasCorrectas": [""],
-        "tipo": "Multiple/Simple",
+        "id": "167",
+        "pregunta" : "A developer needs to create a custom Interface in Apex. <br> <br> Which three considerations must the developer keep in mind while developing the Apex Interface?" ,
+        "respuestasCorrectas": ["1","2","4"],
+        "tipo": "Multiple",
         "respuestas": [
             {
                 "id" : "1",
-                "titulo" : "",
+                "titulo" : "The Apex class must be declared using the interface keyword.",
             },
             {
                 "id" : "2",
-                "titulo" : "",
+                "titulo" : "A method implementation can be defined within the Apex Interface",
             },
             {
                 "id" : "3",
-                "titulo" : ""
+                "titulo" : "The Apex interface class access modifier can be set to Private, Public, or Global."
             },
             {
                 "id" : "4",
-                "titulo" : ""
+                "titulo" : "A method defined In an Apex Interface cannot have an access modifier."
+            },
+            {
+                "id" : "5",
+                "titulo" : "New methods can be added to a public interface within a released package."
             }
         ]
     },
     {
-        "id": "",
-        "pregunta" : "" ,
-        "respuestasCorrectas": [""],
-        "tipo": "Multiple/Simple",
+        "id": "165",
+        "pregunta" : "Which statement generates a list of Leads and Contacts that have a field with the phrase 'ACME'?" ,
+        "respuestasCorrectas": ["3"],
+        "tipo": "Simple",
         "respuestas": [
             {
                 "id" : "1",
-                "titulo" : "",
+                "titulo" : "<xmp>List <sObject> searchList = (FIND \"ACME\" IN ALL FIELDS RETURNING Contact, Lead);</xmp>",
             },
             {
                 "id" : "2",
-                "titulo" : "",
+                "titulo" : "<xmp>Map <sObject> searchList = (FIND \"ACME\" IN ALL FIELDS RETURNING Contact, Lead);</xmp>",
             },
             {
                 "id" : "3",
-                "titulo" : ""
+                "titulo" : "<xmp>List<List <sObject>> searchList = (FIND \"ACME\" IN ALL FIELDS RETURNING Contact, Lead);</xmp>"
             },
             {
                 "id" : "4",
-                "titulo" : ""
+                "titulo" : "<xmp>List<List < sObject>> searchList = (SELECT Name, ID FROM Contact, Lead WHERE Name like '%ACME%');</xmp>"
             }
         ]
     },
     {
-        "id": "",
-        "pregunta" : "" ,
-        "respuestasCorrectas": [""],
-        "tipo": "Multiple/Simple",
+        "id": "163",
+        "pregunta" : "Refer to the following code that runs in an Execute Anonymous block: <br> <br> for(List<Lead> theseLeads : [SELECT LastName, Company, Email FROM Lead LIMIT 20000 LIMIT])<br>{<br>for(Lead thisLead : theseLeads)<br>{<br>if(thisLead.Email == null)<br>thisLead.Email = assigGenericEmail(thisLead.LastName , thisLead.Company);<br>}<br>Database.update(theseLeads,false);<br>}" ,
+        "respuestasCorrectas": ["2"],
+        "tipo": "Simple",
         "respuestas": [
             {
                 "id" : "1",
-                "titulo" : "",
+                "titulo" : "In an environment where the full result set is returned, what is a possible outcome of this code?",
             },
             {
                 "id" : "2",
-                "titulo" : "",
+                "titulo" : "The total number of records processed as a result of DML statements will be exceeded."
             },
             {
                 "id" : "3",
-                "titulo" : ""
-            },
+                "titulo" : "The transaction will succeed and the first ten thousand records will be committed to the database."
+            }
+            ,
             {
                 "id" : "4",
-                "titulo" : ""
+                "titulo" : "The total number of DML statements will be exceeded."
             }
         ]
     },
     {
-        "id": "",
-        "pregunta" : "" ,
-        "respuestasCorrectas": [""],
-        "tipo": "Multiple/Simple",
+        "id": "160",
+        "pregunta" : "A developer must modify the following code snippet to prevent the number of SOQL queries issued from exceeding the platform governor limit. <br> <br> <xmp>public class without sharing OpportunityService{ </xmp> <xmp>   public static List<OpportunityLineItem>  getOpportunityProducts(Set<Id> opportunityIds){ </xmp> <xmp>  List<OpportunityLineItem> oppLineItems = new List<OpportunityLineItem>();  </xmp> <xmp> for (Id thisOppid : opportunityIds){ </xmp> <xmp> oppLineItems.addAll([SELECT Id FROM OpportunityLineItem WHERE OpportunityId =: thisOppid ]);    }  </xmp> return oppLineItems }  }</xmp> <br> <br> The above method might be called during a trigger execution via a Lightning component. <br> <br> Which technique should be implemented to avoid reaching the governor limit?" ,
+        "respuestasCorrectas": ["3"],
+        "tipo": "Simple",
         "respuestas": [
             {
                 "id" : "1",
-                "titulo" : "",
+                "titulo" : "Refactor the code above to perform the SOQL query only if the Set of opportunityIds contains less 100 Ids.",
             },
             {
                 "id" : "2",
-                "titulo" : "",
+                "titulo" : "Use the System.Limits.getLimitQueries() method to ensure the number of queries is less than 100.",
             },
             {
                 "id" : "3",
-                "titulo" : ""
+                "titulo" : "Refactor the code above to perform only one SOQL query, filtering by the Set of opportunityIds."
             },
             {
                 "id" : "4",
-                "titulo" : ""
+                "titulo" : "Use the System.Limits.getQueries() method to ensure the number of queries is less than 100."
             }
         ]
     },
     {
-        "id": "",
-        "pregunta" : "" ,
-        "respuestasCorrectas": [""],
-        "tipo": "Multiple/Simple",
+        "id": "159",
+        "pregunta" : "Universal Container is building a recruiting app with an Applicant object that stores information about an individual person that represents a job. Each application may apply for more than one job. <br> <br> What should a developer implement to represent that an applicant has applied for a job? " ,
+        "respuestasCorrectas": ["1"],
+        "tipo": "Simple",
         "respuestas": [
             {
                 "id" : "1",
-                "titulo" : "",
+                "titulo" : "Master-detail field from Applicant to Job",
             },
             {
                 "id" : "2",
-                "titulo" : "",
+                "titulo" : "Formula field on Applicant that references Job",
             },
             {
                 "id" : "3",
-                "titulo" : ""
+                "titulo" : "Junction object between Applicant and Job"
             },
             {
                 "id" : "4",
-                "titulo" : ""
+                "titulo" : "Lookup field from Applicant to Job"
             }
         ]
     },
     {
-        "id": "",
-        "pregunta" : "" ,
-        "respuestasCorrectas": [""],
-        "tipo": "Multiple/Simple",
+        "id": "156",
+        "pregunta" : "What are three techniques that a developer can use to invoke an anonymous block of code?" ,
+        "respuestasCorrectas": ["1","3","4"],
+        "tipo": "Multiple",
         "respuestas": [
             {
                 "id" : "1",
-                "titulo" : "",
+                "titulo" : "Use the SOAP API to make a call to execute anonymous code.",
             },
             {
                 "id" : "2",
-                "titulo" : "",
+                "titulo" : "Create a Visualforce page that uses a controller class that is declared without sharing.",
             },
             {
                 "id" : "3",
-                "titulo" : ""
+                "titulo" : "Run code using the Anonymous Apex feature of the Developer’s IDE."
             },
             {
                 "id" : "4",
-                "titulo" : ""
+                "titulo" : "Type code into the Developer Console and execute it directly."
+            }
+            ,
+            {
+                "id" : "5",
+                "titulo" : "Create and execute a test method that does not specify a runAs() call."
             }
         ]
     }

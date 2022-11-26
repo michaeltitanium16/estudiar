@@ -823,7 +823,7 @@ let set3 = [
     {
         "id": "35",
         "pregunta" : "Universal Hiring is using Salesforce to capture job applications. A salesforce administrator created two custom objects: Job__c acting as the master object, Job_Applitacion__c acting as the detail. <br> <br> Within the Job__c object, a custom multi-select picklist, Preferred_Locations__c , contains a list of approved states for the position. Each Job_Application__c record relates to a Contact within the system through a master-detail relationship <br> <br> Recruiters have requested the ability to view whether the Contact's Mailing State value matches a value selected on the Preferred_Locations__c field, within the Job_Application__c record. Recruiters would like this value to be kept in sync, if changes occur to the Contact's Mailing State or if the Job's Preferred_Locations__c field is updated. <br> <br> What is the recommended tool a developer should use to meet the business requirement? " ,
-        "respuestasCorrectas": ["2"],
+        "respuestasCorrectas": ["3"],
         "tipo": "Simple",
         "respuestas": [
             {
@@ -1264,7 +1264,7 @@ let set3 = [
     },
     {
         "id": "53",
-        "pregunta" : "NO SE VE TODA LA PREGUNTA AQUI VA UNA PARTE <bR <br> public with sharing class Calculator <br>{<br>public void doCalculations() {<br>StatusFetcher sFetcher = new Status Fetcher(); <br>if(sFetcher.isActive()){<br>//do calculations here <br>}<br>}<br>}<br> <br<br> The Status Fercher class successfully compiled and saved. However, the Calculator class has a compile time error. <br> <br> How should the developer fix this code?" ,
+        "pregunta" : "A developer wrote the following two classes: <br> <br> public with sharing class Calculator <br>{<br>public void doCalculations() {<br>StatusFetcher sFetcher = new Status Fetcher(); <br>if(sFetcher.isActive()){<br>//do calculations here <br>}<br>}<br>}<br> <br<br> The Status Fercher class successfully compiled and saved. However, the Calculator class has a compile time error. <br> <br> How should the developer fix this code?" ,
         "respuestasCorrectas": ["2"],
         "tipo": "Simple",
         "respuestas": [

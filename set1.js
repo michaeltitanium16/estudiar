@@ -1222,7 +1222,7 @@ let set1 = [
     {
         "id": "51",
         "pregunta" : "A developer created a custom order management app that uses an Apex class. The order is represented by an Order object and an OrderItem object that has a master-detail relationship to Order. During order processing, an order may be split into multiple orders. <br> <br> What should a developer do to allow their code to move some existing OrderItem records to a new Order record? " ,
-        "respuestasCorrectas": ["1"],
+        "respuestasCorrectas": ["3"],
         "tipo": "Simple",
         "respuestas": [
             {
@@ -1293,7 +1293,7 @@ let set1 = [
     },  
     {
         "id": "54",
-        "pregunta" : "Cloud Kicks Fitness, an ISV Salesforce partner, is developing a managed package application. One of the application modules allows the user to calculate body fat using the Apex class, BodyFat, and its method, calculateBodyFatt. The product owner wants to ensure this method is accessible by the consumer of the application when developing customizations outside the ISV's package namespace.  <br> <br> Which approach should a developer take to ensure calculateBodyFat() is accessible outside the package namespace? " ,
+        "pregunta" : "Cloud Kicks Fitness, an ISV Salesforce partner, is developing a managed package application. One of the application modules allows the user to calculate body fat using the Apex class, BodyFat, and its method, calculateBodyFat(). The product owner wants to ensure this method is accessible by the consumer of the application when developing customizations outside the ISV's package namespace.  <br> <br> Which approach should a developer take to ensure calculateBodyFat() is accessible outside the package namespace? " ,
         "respuestasCorrectas": ["3"],
         "tipo": "Simple",
         "respuestas": [

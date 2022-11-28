@@ -31,6 +31,10 @@ function getExam(set)
     
         break;
 
+        case "5": data = set4;
+    
+        break;
+
         case "random":{
 
             alert('aun no ');
